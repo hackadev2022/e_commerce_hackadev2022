@@ -3,7 +3,7 @@ Repositorio criado para criação de um site de vendas para participação do Ha
 
 ### Integrantes:
 
-- Daniel Lucas
+- <a href="https://github.com/danlucss" target="_blank"> Daniel Lucas </a>
 - Rodolfo Mares
 - Geovanna Cunha
 - Aldo Roque
