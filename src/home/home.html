@@ -24,22 +24,45 @@
   <body>
     <header class="main-header b-shadow">
       <div class="inner container">
-        <div class="logo">
-          <a href="#">FASHIONISTA</a>
+        <div class="fjs--header-top">
+          <div class="logo">
+            <a href="#">FASHIONISTA</a>
+          </div>
+          <div class="controls">
+            <div class="fjs--controls-top">
+              <ul>
+                <li>
+                  <a id="button-search" href="#"
+                    ><i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                  <input
+                    type="text"
+                    name="search"
+                    id="fjs--search-input"
+                    placeholder="Pesquisa"
+                  />
+                </li>
+                <li id="li-button-menu">
+                  <a id="button-menu" href="#"
+                    ><i class="fa-solid fa-bars"></i
+                  ></a>
+                </li>
+                <li id="li-button-cart">
+                  <a id="button-cart" href="#"
+                    ><i class="fa-solid fa-bag-shopping"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="controls">
+
+        <div class="fjs--controls-bottom">
           <ul>
-            <li>
-              <a id="button-search" href="#"
-                ><i class="fa-solid fa-magnifying-glass"></i
-              ></a>
-            </li>
-            <li>
-              <a id="button-cart" href="#"
-                ><i class="fa-solid fa-bag-shopping"></i
-              ></a>
-              <span class="notification-count">2</span>
-            </li>
+            <li><a href="#">Cores</a></li>
+            <li><a href="#">Marcas</a></li>
+            <li><a href="#">Peças</a></li>
+            <li><a href="#">Ofertas</a></li>
           </ul>
         </div>
       </div>
@@ -55,7 +78,7 @@
           />
           <p class="fjs--produto-name">Nome da peça de roupa 1</p>
           <div class="fjs--produto-price">
-            <sup class="fjs--produto-normal-price">R$199,99</sup>
+            <sup class="fjs--produto-normal-price"><del>R$199,99</del></sup>
             <strong class="fjs--produto-offer-price">R$179,99</strong>
           </div>
         </div>
@@ -89,7 +112,7 @@
           />
           <p class="fjs--produto-name">Nome da peça de roupa 4</p>
           <div class="fjs--produto-price">
-            <sup class="fjs--produto-normal-price">R$159,99</sup>
+            <sup class="fjs--produto-normal-price"><del>R$159,99</del></sup>
             <strong class="fjs--produto-offer-price">R$129,99</strong>
           </div>
         </div>
@@ -112,7 +135,7 @@
           />
           <p class="fjs--produto-name">Nome da peça de roupa 6</p>
           <div class="fjs--produto-price">
-            <sup class="fjs--produto-normal-price">R$199,99</sup>
+            <sup class="fjs--produto-normal-price"><del>R$199,99</del></sup>
             <strong class="fjs--produto-offer-price">R$179,99</strong>
           </div>
         </div>
@@ -146,7 +169,7 @@
           />
           <p class="fjs--produto-name">Nome da peça de roupa 9</p>
           <div class="fjs--produto-price">
-            <sup class="fjs--produto-normal-price">R$159,99</sup>
+            <sup class="fjs--produto-normal-price"><del>R$159,99</del></sup>
             <strong class="fjs--produto-offer-price">R$129,99</strong>
           </div>
         </div>
@@ -169,7 +192,7 @@
           />
           <p class="fjs--produto-name">Nome da peça de roupa 11</p>
           <div class="fjs--produto-price">
-            <sup class="fjs--produto-normal-price">R$199,99</sup>
+            <sup class="fjs--produto-normal-price"><del>R$199,99</del> </sup>
             <strong class="fjs--produto-offer-price">R$179,99</strong>
           </div>
         </div>
@@ -203,7 +226,7 @@
           />
           <p class="fjs--produto-name">Nome da peça de roupa 14</p>
           <div class="fjs--produto-price">
-            <sup class="fjs--produto-normal-price">R$159,99</sup>
+            <sup class="fjs--produto-normal-price"><del>R$159,99</del> </sup>
             <strong class="fjs--produto-offer-price">R$129,99</strong>
           </div>
         </div>
