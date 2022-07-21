@@ -1,0 +1,48 @@
+.fjs--produtos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.fjs--produto {
+  background-color: #fafafa;
+  width: 206px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 10px 5px;
+  padding: 0px 5px;
+}
+
+.fjs--produto:hover {
+  cursor: pointer;
+}
+
+.fjs--produto-img {
+  width: 100px;
+}
+
+.fjs--produto-name {
+  display: flex;
+  flex-direction: row;
+  margin: 2px 0px;
+}
+
+.fjs--produto-price {
+  font-size: 12px;
+  margin: 2px 0px;
+}
+
+.fjs--produto-price mark {
+  background-color: transparent;
+}
+
+@media (min-width: 600px) {
+  .fjs--produto-img {
+    width: 150px;
+  }
+}
