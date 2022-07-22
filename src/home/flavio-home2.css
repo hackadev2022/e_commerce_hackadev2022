@@ -228,11 +228,10 @@ main {
   background-color: var(--color-bg);
   width: 206px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 10px 5px;
   padding: 0px 5px;
 }
@@ -378,5 +377,9 @@ footer li:hover {
 
   .fjs--navigation-category-top br {
     display: none;
+  }
+
+  .fjs--produto {
+    width: 300px;
   }
 } ;
