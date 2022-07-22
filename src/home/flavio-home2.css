@@ -1,0 +1,381 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  opacity: 0.9;
+}
+
+a:active {
+  opacity: 0.8;
+}
+
+ul {
+  list-style: none;
+}
+/* ----------------- */
+
+:root {
+  --container-max-width: 1200px;
+  --color-rich-black: #0d1321;
+  --color-prussian-blue: #1d2d44;
+  --color-dark-electric-blue: #3e5c76;
+  --color-shadow-blue: #748cab;
+  --color-eggshell: #f0ebd8;
+  --color-black: #010101;
+
+  --color-letter: var(--color-rich-black);
+  --color-bg: var(--color-eggshell);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+  align-items: center;
+  color: var(--color-letter);
+  background: var(--color-bg);
+  font-size: 1em;
+  font-weight: 700;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  background-color: var(--color-bg);
+  height: auto;
+  position: fixed;
+  z-index: 1;
+}
+
+.fjs--container {
+  max-width: var(--container-max-width);
+  background-color: var(--color-bg);
+  width: 100%;
+}
+
+.fjs--logo {
+  font-size: 2.5em;
+  padding: 10px;
+}
+
+.fjs--menu-icons {
+  font-size: 1.2em;
+}
+
+.fjs--header-top-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fjs--header-top-logo b {
+  display: none;
+}
+
+.fjs--header-top-items i {
+  padding: 10px;
+}
+
+.fjs--header-bottom-items {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+}
+
+.fjs--header-bottom-items i {
+  color: var(--color-prussian-blue);
+  position: absolute;
+  top: 73px;
+  left: 20px;
+  border: none;
+  outline: none;
+}
+
+#fjs--search-input {
+  border: var(--color-eggshell);
+  border-radius: 30px;
+  font-size: 1.2em;
+  display: block;
+  width: 100%;
+  height: 39px;
+  padding: 1em 2em;
+  margin: 0 5px;
+}
+
+.fjs--categorys {
+  display: none;
+}
+
+.fjs--categorys ul {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main {
+  margin-top: 134px;
+}
+
+.fjs--main-baner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-image: url("./imgs/banner_ilustrativo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.fjs--main-baner-top {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.fjs--main-baner-top h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.fjs--main-baner-bottom {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#fjs--button-banner {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: #ece3dd 1px solid;
+}
+
+.fjs--main-baner-button-icon {
+  height: 40px;
+  font-size: 1.3em;
+}
+
+.fjs--main-baner-button-icon i {
+  font-size: 1.3em;
+  animation: slide-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s infinite
+    both;
+}
+
+.fjs--navigation-category {
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  padding: 0px 10px;
+}
+
+.fjs--navigation-category-top {
+  display: flex;
+  flex-direction: row;
+}
+
+.fjs--navigation-category-top h1 {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+.fjs--navigation-slider-control {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.fjs--navigation-slider {
+  display: flex;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 350px;
+  flex-wrap: nowrap;
+}
+
+.fjs--navigation-slider-item {
+  padding: 0px 20px;
+}
+
+.fjs--navigation-slider-item img {
+  width: 180px;
+}
+
+.fjs--produtos {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.fjs--produtos-title {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.fjs--produto {
+  background-color: var(--color-bg);
+  width: 206px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 10px 5px;
+  padding: 0px 5px;
+}
+
+.fjs--produto:hover {
+  cursor: pointer;
+}
+
+.fjs--produto-img {
+  width: 100px;
+}
+
+.fjs--produto-name {
+  display: flex;
+  flex-direction: row;
+  margin: 2px 0px;
+}
+
+.fjs--produto-price {
+  font-size: 12px;
+  margin: 2px 0px;
+}
+
+.fjs--produto-price mark {
+  background-color: transparent;
+}
+
+.footer {
+  background-color: #d1cece;
+}
+
+footer li:hover {
+  cursor: pointer;
+}
+
+.fjs--footer-top {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 10px;
+
+  background-color: #d1cece;
+}
+
+.fjs--footer-top li {
+  padding: 0 10px;
+  font-size: 0.8em;
+}
+
+.fjs--footer-top-item {
+  align-self: baseline;
+}
+
+.fjs--footer-top-item li {
+  line-height: 2em;
+}
+
+.fjs--footer-bottom {
+  padding: 0px 10px;
+}
+
+.fjs--footer-bottom ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fjs--footer-bottom li {
+  padding: 0 10px;
+  font-size: 0.8em;
+}
+
+.fjs--footer-bottom img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.fjs--footer-bottom li {
+  line-height: 2em;
+}
+
+.fjs--footer-bottom li div {
+  display: flex;
+  align-items: center;
+}
+
+/* ---------------------- */
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 0.3;
+  }
+}
+
+@keyframes slide-fwd-center {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: translateZ(160px);
+  }
+}
+
+/* --------------------- */
+
+@media (min-width: 700px) {
+  .fjs--produto-img {
+    width: 150px;
+  }
+  #fjs--menu-bars-icon {
+    display: none;
+  }
+  .fjs--categorys {
+    display: block;
+  }
+  .fjs--header-top-logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: auto;
+  }
+
+  .fjs--header-top-logo b {
+    display: block;
+    font-size: 2em;
+  }
+
+  .fjs--header-top-logo-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fjs--navigation-category-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .fjs--navigation-category-top br {
+    display: none;
+  }
+} ;

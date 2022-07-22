@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fasshion</title>
+
+    <link rel="stylesheet" href="flavio-home2.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="fjs--container">
+      <div class="fjs--header-top-items">
+        <div class="fjs--header-top-logo">
+          <div class="fjs--header-top-logo-name"><b>HackFashion</b></div>
+          <div>
+            <a href="#"><i class="fa-solid fa-house fjs--logo"></i></a>
+          </div>
+        </div>
+        <div>
+          <a href="#"
+            ><i class="fa-solid fa-location-dot fjs--menu-icons"></i
+          ></a>
+
+          <a href="#"><i class="fa-solid fa-user fjs--menu-icons"></i></a>
+
+          <a href="#"
+            ><i class="fa-solid fa-cart-shopping fjs--menu-icons"></i
+          ></a>
+
+          <a href="#" id="fjs--menu-bars-icon"
+            ><i class="fa-solid fa-bars fjs--menu-icons"></i
+          ></a>
+        </div>
+      </div>
+      <div class="fjs--header-bottom-items">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <input
+          type="text"
+          name=""
+          id="fjs--search-input"
+          placeholder="pesquisa"
+        />
+      </div>
+      <div class="fjs--categorys">
+        <ul>
+          <li><a href="#">Categoria 1</a></li>
+          <li><a href="#">Categoria 2</a></li>
+          <li><a href="#">Categoria 3</a></li>
+          <li><a href="#">Categoria 4</a></li>
+          <li><a href="#">Categoria 5</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="fjs--container">
+      <section class="fjs--main-baner">
+        <div class="fjs--main-baner-top">
+          <a href="#"><i class="fa-solid fa-house fjs--logo"></i></a>
+          <strong><h2>SALE</h2></strong>
+        </div>
+        <div class="fjs--main-baner-bottom">
+          <div>
+            <strong><h2>Última Semana</h2></strong><br />
+            <strong><h3>Até 50$ OFF</h3></strong><br />
+          </div>
+          <div>
+            <input type="button" value="Comprar" id="fjs--button-banner" />
+            <div class="fjs--main-baner-button-icon">
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="fjs--navigation-category">
+        <div class="fjs--navigation-category-top">
+          <div>
+            <h1>
+              Navegue por <br />
+              categoria
+            </h1>
+          </div>
+          <div class="fjs--navigation-slider-control">
+            <a href="#"><i class="fa-solid fa-angle-left"></i></a> 1/5
+            <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+          </div>
+        </div>
+        <div class="fjs--navigation-slider">
+          <div>
+            <div class="fjs--navigation-slider-item">
+              <img
+                src="./imgs/img_ilustrativa1.jfif"
+                alt="imagem ilustrativa 1"
+              />
+              <a href="#">Categoria 1</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="fjs--navigation-slider-item">
+              <img
+                src="./imgs/img_ilustrativa2.jfif"
+                alt="imagem ilustrativa 2"
+              />
+              <a href="#">Categoria 2</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="fjs--navigation-slider-item">
+              <img
+                src="./imgs/img_ilustrativa3.jfif"
+                alt="imagem ilustrativa 3"
+              />
+              <a href="#">Categoria 3</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="fjs--navigation-slider-item">
+              <img
+                src="./imgs/img_ilustrativa4.jfif"
+                alt="imagem ilustrativa 4"
+              />
+              <a href="#">Categoria 4</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="fjs--navigation-slider-item">
+              <img
+                src="./imgs/img_ilustrativa5.jfif"
+                alt="imagem ilustrativa 5"
+              />
+              <a href="#">Categoria 5</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="fjs--produtos">
+        <div class="fjs--produtos-title">
+          <h1>Produtos</h1>
+        </div>
+        <div class="fjs--produto">
+          <img
+            class="fjs--produto-img"
+            src="./imgs/img_ilustrativa1.jfif"
+            alt="imagem_ilustrativa_de_um_produto"
+          />
+          <p class="fjs--produto-name">Nome da peça de roupa 1</p>
+          <div class="fjs--produto-price">
+            <sup class="fjs--produto-normal-price"><del>R$199,99</del></sup>
+            <strong class="fjs--produto-offer-price">R$179,99</strong>
+          </div>
+        </div>
+        <div class="fjs--produto">
+          <img
+            class="fjs--produto-img"
+            src="./imgs/img_ilustrativa2.jfif"
+            alt="imagem_ilustrativa_de_um_produto"
+          />
+          <p class="fjs--produto-name">Nome da peça de roupa 2</p>
+          <div class="fjs--produto-price">
+            <strong class="fjs--produto-normal-price">R$189,99</strong>
+          </div>
+        </div>
+        <div class="fjs--produto">
+          <img
+            class="fjs--produto-img"
+            src="./imgs/img_ilustrativa3.jfif"
+            alt="imagem_ilustrativa_de_um_produto"
+          />
+          <p class="fjs--produto-name">Nome da peça de roupa 3</p>
+          <div class="fjs--produto-price">
+            <strong class="fjs--produto-normal-price">R$179,99</strong>
+          </div>
+        </div>
+        <div class="fjs--produto">
+          <img
+            class="fjs--produto-img"
+            src="./imgs/img_ilustrativa4.jfif"
+            alt="imagem_ilustrativa_de_um_produto"
+          />
+          <p class="fjs--produto-name">Nome da peça de roupa 4</p>
+          <div class="fjs--produto-price">
+            <sup class="fjs--produto-normal-price"><del>R$159,99</del></sup>
+            <strong class="fjs--produto-offer-price">R$129,99</strong>
+          </div>
+        </div>
+        <div class="fjs--produto">
+          <img
+            class="fjs--produto-img"
+            src="./imgs/img_ilustrativa5.jfif"
+            alt="imagem_ilustrativa_de_um_produto"
+          />
+          <p class="fjs--produto-name">Nome da peça de roupa 5</p>
+          <div class="fjs--produto-price">
+            <strong class="fjs--produto-normal-price">R$129,99</strong>
+          </div>
+        </div>
+        <div class="fjs--produto">
+          <img
+            class="fjs--produto-img"
+            src="./imgs/img_ilustrativa1.jfif"
+            alt="imagem_ilustrativa_de_um_produto"
+          />
+          <p class="fjs--produto-name">Nome da peça de roupa 6</p>
+          <div class="fjs--produto-price">
+            <sup class="fjs--produto-normal-price"><del>R$199,99</del></sup>
+            <strong class="fjs--produto-offer-price">R$179,99</strong>
+          </div>
+        </div>
+        <div class="fjs--produto">
+          <img
+            class="fjs--produto-img"
+            src="./imgs/img_ilustrativa2.jfif"
+            alt="imagem_ilustrativa_de_um_produto"
+          />
+          <p class="fjs--produto-name">Nome da peça de roupa 7</p>
+          <div class="fjs--produto-price">
+            <strong class="fjs--produto-normal-price">R$189,99</strong>
+          </div>
+        </div>
+        <div class="fjs--produto">
+          <img
+            class="fjs--produto-img"
+            src="./imgs/img_ilustrativa3.jfif"
+            alt="imagem_ilustrativa_de_um_produto"
+          />
+          <p class="fjs--produto-name">Nome da peça de roupa 8</p>
+          <div class="fjs--produto-price">
+            <strong class="fjs--produto-normal-price">R$179,99</strong>
+          </div>
+        </div>
+        <div class="fjs--produto">
+          <img
+            class="fjs--produto-img"
+            src="./imgs/img_ilustrativa4.jfif"
+            alt="imagem_ilustrativa_de_um_produto"
+          />
+          <p class="fjs--produto-name">Nome da peça de roupa 9</p>
+          <div class="fjs--produto-price">
+            <sup class="fjs--produto-normal-price"><del>R$159,99</del></sup>
+            <strong class="fjs--produto-offer-price">R$129,99</strong>
+          </div>
+        </div>
+        <div class="fjs--produto">
+          <img
+            class="fjs--produto-img"
+            src="./imgs/img_ilustrativa5.jfif"
+            alt="imagem_ilustrativa_de_um_produto"
+          />
+          <p class="fjs--produto-name">Nome da peça de roupa 10</p>
+          <div class="fjs--produto-price">
+            <strong class="fjs--produto-normal-price">R$129,99</strong>
+          </div>
+        </div>
+        <div class="fjs--produto">
+          <img
+            class="fjs--produto-img"
+            src="./imgs/img_ilustrativa1.jfif"
+            alt="imagem_ilustrativa_de_um_produto"
+          />
+          <p class="fjs--produto-name">Nome da peça de roupa 11</p>
+          <div class="fjs--produto-price">
+            <sup class="fjs--produto-normal-price"><del>R$199,99</del> </sup>
+            <strong class="fjs--produto-offer-price">R$179,99</strong>
+          </div>
+        </div>
+        <div class="fjs--produto">
+          <img
+            class="fjs--produto-img"
+            src="./imgs/img_ilustrativa2.jfif"
+            alt="imagem_ilustrativa_de_um_produto"
+          />
+          <p class="fjs--produto-name">Nome da peça de roupa 12</p>
+          <div class="fjs--produto-price">
+            <strong class="fjs--produto-normal-price">R$189,99</strong>
+          </div>
+        </div>
+        <div class="fjs--produto">
+          <img
+            class="fjs--produto-img"
+            src="./imgs/img_ilustrativa3.jfif"
+            alt="imagem_ilustrativa_de_um_produto"
+          />
+          <p class="fjs--produto-name">Nome da peça de roupa 13</p>
+          <div class="fjs--produto-price">
+            <strong class="fjs--produto-normal-price">R$179,99</strong>
+          </div>
+        </div>
+        <div class="fjs--produto">
+          <img
+            class="fjs--produto-img"
+            src="./imgs/img_ilustrativa4.jfif"
+            alt="imagem_ilustrativa_de_um_produto"
+          />
+          <p class="fjs--produto-name">Nome da peça de roupa 14</p>
+          <div class="fjs--produto-price">
+            <sup class="fjs--produto-normal-price"><del>R$159,99</del> </sup>
+            <strong class="fjs--produto-offer-price">R$129,99</strong>
+          </div>
+        </div>
+        <div class="fjs--produto">
+          <img
+            class="fjs--produto-img"
+            src="./imgs/img_ilustrativa5.jfif"
+            alt="imagem_ilustrativa_de_um_produto"
+          />
+          <p class="fjs--produto-name">Nome da peça de roupa 15</p>
+          <div class="fjs--produto-price">
+            <strong class="fjs--produto-normal-price">R$129,99</strong>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="fjs--container">
+      <div class="fjs--footer-top">
+        <div class="fjs--footer-top-item">
+          <strong>Sobre a <br />HackFashion</strong>
+          <ul>
+            <li>O Grupo HackFashion</li>
+            <li>Carreira</li>
+            <li>Proteção da marca</li>
+          </ul>
+        </div>
+        <div class="fjs--footer-top-item">
+          <strong>Loja</strong>
+          <ul>
+            <li>Categoria 1</li>
+            <li>Categoria 2</li>
+            <li>Categoria 3</li>
+            <li>Categoria 4</li>
+            <li>Categoria 5</li>
+          </ul>
+        </div>
+      </div>
+      <div class="fjs--footer-bottom">
+        <ul>
+          <li>Mapa da página|</li>
+          <li>Créditos|</li>
+          <li>Termos e condições|</li>
+          <li>Termos de privacidade|</li>
+          <li>Guia de tamanhos|</li>
+          <li>
+            <div>
+              <img src="./imgs/brasil.png" alt="bandeira do brasil" /><b
+                >Brasil</b
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
