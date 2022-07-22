@@ -12,6 +12,7 @@ Repositorio criado para criação de um site de vendas para participação do Ha
 - Flávio
 - João
 - Harlen
+- Victor Emanuel
 
 
 ### Sites uteis: 
