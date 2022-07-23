@@ -250,6 +250,9 @@ main {
   flex-direction: row;
   margin: 2px 0px;
 }
+.fa-star {
+  color: goldenrod;
+}
 
 .fjs--produto-price {
   font-size: 12px;
