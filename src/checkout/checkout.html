@@ -1,53 +1,235 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fasshion</title>
+<head>
+  <meta charset="UTF-8" />
 
-    <link rel="stylesheet" href="/assets/css/common-styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fasshion</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <link rel="stylesheet" href="/assets/css/common-styles.css" />
+  <link rel="stylesheet" href="./checkout.css" />
 
-  <body>
-    <header class="main-header b-shadow">
-      <div class="inner container">
-        <div class="logo">
-          <a href="#">FASHIONISTA</a>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="main-header b-shadow">
+    <div class="inner container">
+      <div class="logo">
+        <a href="#">FASHIONISTA</a>
+      </div>
+      <div class="controls">
+        <ul>
+          <li>
+            <a id="button-search" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+          <li>
+            <a id="button-cart" href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            <span class="notification-count">3</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="checkout">
+      <div class="checkout__cart">
+        <h2>
+          Seu pedido
+          <span>(<a href="#"><i class="fa-solid fa-chevron-left"></i>Voltar para o carrinho</a>)</span>
+        </h2>
+
+        <div class="wrapper-table">
+          <table>
+            <thead>
+              <tr>
+                <th></th> <!-- imagem do produto -->
+                <th>Produto</th>
+                <th>Atributos</th>
+                <th>Qtd.</th>
+                <th>Preço Unit.</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <img src="./img/img1.jpg" alt="Suéter Bege">
+                </td>
+                <td>Suéter Bege</td>
+                <td>Tam: P</td>
+                <td>2</td>
+                <td class="price"><span class="price__old">R$ 120,00</span>R$ 90,00</td>
+                <td>R$ 180,00</td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./img/img2.png" alt="Casaco Bege">
+                </td>
+                <td>Casaco Bege</td>
+                <td>Tam: M</td>
+                <td>1</td>
+                <td>R$ 105,00</td>
+                <td>R$ 105,00</td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./img/img3.jpg" alt="Calça Jeans">
+                </td>
+                <td>Calça Jeans</td>
+                <td>Tam: M</td>
+                <td>1</td>
+                <td>R$ 150,00</td>
+                <td>R$ 150,00</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="controls">
-          <ul>
-            <li>
-              <a id="button-search" href="#"
-                ><i class="fa-solid fa-magnifying-glass"></i
-              ></a>
-            </li>
-            <li>
-              <a id="button-cart" href="#"
-                ><i class="fa-solid fa-bag-shopping"></i
-              ></a>
-              <span class="notification-count">2</span>
-            </li>
-          </ul>
+
+      </div>
+
+      <div class="checkout__info">
+        <div class="column personal-info">
+          <h2>Você</h2>
+
+          <div class="personal-info__user">
+            <span>endereco@email.com</span>
+            <a href="#">Sair e trocar</a>
+          </div>
+
+          <h2>Destino</h2>
+          <div class="personal-info__address">
+            <button class="btn-add">
+              <i class="fa-solid fa-add"></i>
+            </button>
+            <div class="address-block">
+              Nome do Cliente <br>
+              Nome da rua, 100 <br>
+              Cidade - UF <br>
+              <strong>12345-000</strong> <br>
+              <div class="text-align-right">
+                <div class="selected-text">
+                  Endereço para envio <i class="fa-solid fa-check"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2>Forma de envio</h2>
+          <div class="shipping">
+            <div class="shipping__item">
+              <input type="radio" name="shipping-method" id="retirada">
+              <label for="retirada">Retirada no local <strong>Grátis</strong></label>
+            </div>
+            <div class="shipping__item shipping__item--selected">
+              <input type="radio" checked name="shipping-method" id="pac">
+              <label for="pac">PAC <strong>R$ 20,00</strong></label>
+            </div>
+            <div class="shipping__item">
+              <input type="radio" name="shipping-method" id="sedex">
+              <label for="sedex">SEDEX <strong>R$ 35,00</strong></label>
+            </div>
+
+            <div class="shipping__time">
+              <strong>Prazo de Entrega:</strong> 10 dias úteis
+            </div>
+          </div>
+
+          <div class="notes">
+            <h2>Observações</h2>
+            <textarea name="shipping-notes" id="shipping-notes" rows="5"
+              placeholder="Informações adicionais sobre o pedido."></textarea>
+          </div>
+
+        </div>
+
+
+
+        <div class="column payment-info">
+          <h2>Resumo</h2>
+          <div class="payment-info__summary">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    Subtotal
+                  </td>
+                  <td>R$ 435,00</td>
+                </tr>
+                <tr>
+                  <td>
+                    PAC
+                  </td>
+                  <td>R$ 20,00</td>
+                </tr>
+                <tr class="total">
+                  <td>
+                    Total do pedido
+                  </td>
+                  <td>
+                    <strong>R$ 455,00</strong>
+                    <div>
+                      em até 6x de 75,83 <br>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>Como deseja pagar?</h2>
+          <div class="payment-method">
+            <div class="payment-method__item">
+              <input type="radio" name="payment-method" id="pix">
+              <label for="pix">
+                <div>
+                  <i class="fa-brands fa-pix"></i>
+                  PIX
+                </div>
+                <span>à vista</span>
+              </label>
+            </div>
+
+            <div class="payment-method__item payment-method__item--selected">
+              <input type="radio" checked name="payment-method" id="boleto">
+              <label for="boleto">
+                <div>
+                  <i class="fa-solid fa-barcode"></i>
+                  Boleto
+                </div>
+                <span>à vista</span>
+              </label>
+            </div>
+
+
+            <div class="payment-method__item">
+              <input type="radio" name="payment-method" id="cartao-credito">
+              <label for="cartao-credito">
+                <div>
+                  <i class="fa-solid fa-credit-card"></i>
+                  Cartão de crédito
+                </div>
+                <span>até 6x sem juros</span>
+              </label>
+
+            </div>
+
+            <br>
+            <div class="text-align-right">
+              <a href="#" class="btn">Ir para o pagamento</a>
+            </div>
+
+          </div>
         </div>
       </div>
-    </header>
+    </div>
+  </main>
+</body>
 
-    <main class="container">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusantium
-      delectus, provident ab totam dolorum corrupti aut sunt magni iusto neque,
-      sequi sit laudantium aliquid facere cumque dolores consequatur natus!
-    </main>
-  </body>
 </html>

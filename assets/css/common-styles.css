@@ -30,6 +30,7 @@ ul {
 
 body {
   --container-max-width: 1200px;
+  --border-color: #edeaea;
 }
 
 body {
@@ -40,7 +41,8 @@ body {
 }
 
 body > main {
-  padding: 1rem 0;
+  padding: 70px 0 1rem;
+  /* border: 1px dashed red; */
 }
 
 .container {
@@ -50,12 +52,17 @@ body > main {
 }
 
 .b-shadow {
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 16px 0 rgba(0, 0, 0, 0.05);
 }
 
 header.main-header {
   background-color: #fff;
   padding: 0.75em 0;
+  border-bottom: 1px solid #edeaea;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 .main-header .inner {
