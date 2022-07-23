@@ -15,6 +15,7 @@
 body {
   background-color: var(--bg-color-light);
   color: var(--text-color-light);
+  scroll-behavior: smooth;
 }
 
 fieldset {
@@ -23,7 +24,7 @@ fieldset {
 
 .data-pj,
 .data-adress {
-  display: grid;
+  /* display: grid; */
   margin-bottom: 20px;
 }
 
@@ -55,7 +56,7 @@ fieldset legend {
   font-weight: bold;
   color: #333;
 
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 fieldset > input,
@@ -105,11 +106,35 @@ select :focus {
   color: #fff;
 }
 
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-color-light);
+  background-color: var(--bg-color);
+  height: 200px;
+}
+
 @media screen and (min-width: 768px) {
-  .data-pj,
-  .data-adress {
+  .form-container {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    /* grid-gap: 1rem; */
+    grid-gap: 10rem;
+    margin-bottom: 2rem;
+  }
+
+  fieldset input,
+  select {
+    height: 4rem;
+  }
+  .form-btn {
+    display: flex;
+    justify-content: end;
+    margin-top: 2rem;
+    align-items: center;
+  }
+  .btn {
+    width: auto;
   }
 }

@@ -51,6 +51,7 @@
       sequi sit laudantium aliquid facere cumque dolores consequatur natus!
     </main> -->
     <div class="container">
+      
       <div class="create-account">
         <h1>Criar Conta</h1>
         <input type="radio" name="pf" id="pf" disabled>
@@ -61,9 +62,11 @@
         ></label>
       </div>
     </div>
-    <form class="form-container" action="#" autocomplete="off">
+    <form  action="#" autocomplete="off">
       <div class="container">
-        <fieldset class="data-pj">
+        <div class="form-container">
+          <div class="container">
+            <fieldset class="data-pj">
           <legend>  <i class="fa-solid fa-user-tie"> </i> Dados Cadastrais</legend>
           <label for="name">Nome do Responsável</label>
           <input type="text" name="name" id="name" required />
@@ -81,12 +84,11 @@
           <input type="tel" name="tel" id="tel" required />
           <label for="seller">Nome do vendedor</label>
           <input type="text" name="seller" id="seller" required />
-        </fieldset>
-      </div>
+            </fieldset>
+          </div>
 
-      <div class="container">
-      <div class="form-container adress">
-        <fieldset class="data-adress">
+           <div class="container">
+            <fieldset class="data-adress">
           <legend>
             <i class="fa-solid fa-location-dot"></i>
             Endereço</legend>
@@ -141,14 +143,19 @@
             <option value="TO">Tocantins</option>
             <option value="DF">Distrito Federal</option>
           </select>
-        </fieldset>
+            </fieldset>
+            </div>
+       </div>
       </div>
-    </div>
 
       <div class="form-btn container">
         <button class="btn cancel" type="button">Cancel</button>
         <button class="btn submit" type="submit">Criar conta</button>
       </div>
     </form>
+
+    <footer>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, eligendi vero obcaecati, magni distinctio incidunt illum provident laborum dolores blanditiis dolore facilis accusamus sequi dolorum odio sunt mollitia quam perspiciatis?</p>
+    </footer>
   </body>
 </html>
