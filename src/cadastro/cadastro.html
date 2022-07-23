@@ -2,11 +2,147 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastro</title>
+    <title>Fasshion</title>
+
+    <link rel="stylesheet" href="/assets/css/common-styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    Cadastro
+    <header class="main-header b-shadow">
+      <div class="inner container">
+        <div class="logo">
+          <a href="#">FASHIONISTA</a>
+        </div>
+        <div class="controls">
+          <ul>
+            <li>
+              <a id="button-search" href="#"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+            </li>
+            <li>
+              <a id="button-cart" href="#"
+                ><i class="fa-solid fa-bag-shopping"></i
+              ></a>
+              <span class="notification-count">3</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusantium
+      delectus, provident ab totam dolorum corrupti aut sunt magni iusto neque,
+      sequi sit laudantium aliquid facere cumque dolores consequatur natus!
+    </main>
+
+    <form action="#" autocomplete="on">
+      <div class="container">
+        <h1>Criar conta</h1>
+        <input type="radio" name="pj" id="pj" />
+        <label for="pj">Pessoa Júridica</label>
+      </div>
+      <hr />
+
+      <div class="container">
+        <fieldset class="data-pj">
+          <legend>Dados Pessoais</legend>
+          <label for="name">Nome do responsavel</label>
+          <input type="text" name="name" id="name" required />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+          <label for="cnpj">CNPJ</label>
+          <input type="number" name="cnpj" id="cnpj" required />
+          <label for="social">Razão Social</label>
+          <input type="text" name="social" id="social" required />
+          <label for="ins-estadual">Inscrição Estadual</label>
+          <input type="number" name="ins-estadual" id="ins-estadual" required />
+          <label for="cell">Celular</label>
+          <input type="tel" name="cell" id="cell" />
+          <label for="tel">Telefone Fixo</label>
+          <input type="tel" name="tel" id="tel" required />
+          <label for="seller">Nome do vendedor</label>
+          <input type="text" name="seller" id="seller" required />
+        </fieldset>
+      </div>
+
+      <hr />
+
+      <div class="container">
+        <fieldset class="adress">
+          <legend>Endereço</legend>
+          <label for="cep">CEP</label>
+          <input type="text" name="cep" id="cep" required />
+          <label for="adress">Endereço</label>
+          <input type="text" name="adress" id="adress" required />
+          <label for="a-num">Número</label>
+          <input type="number" name="a-num" id="a-num" />
+          <label for="compliment">Complemento</label>
+          <input type="text" name="compliment" id="compliment" />
+          <label for="a-refer">Rêferencia</label>
+          <input type="text" name="a-refer" id="a-refer" />
+          <label for="a-distrit">Bairro</label>
+          <input type="text" name="a-distrit" id="a-distrit" required />
+          <label for="a-city">Cidade</label>
+          <input list="a-city" name="a-city" required />
+          <datalist id="a-city">
+            <option value="Goiânia"></option>
+            <option value="Aparecida de Goiânia"></option>
+            <option value="Trindade"></option>
+            <option value="Goianira"></option>
+            <option value="Anápolis"></option>
+          </datalist>
+
+          <label for="a-state">Estado</label>
+          <select name="a-state" id="a-state" required>
+            <option value="">Selecione</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="GO">Goías</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="PA">Pará</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+            <option value="DF">Distrito Federal</option>
+          </select>
+        </fieldset>
+      </div>
+
+      <div class="form-btn container">
+        <button id="cancel-bnt" type="button">Cancel</button>
+        <button id="submit-bnt" type="submit">Criar conta</button>
+      </div>
+    </form>
   </body>
 </html>
