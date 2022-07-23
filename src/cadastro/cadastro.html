@@ -7,6 +7,7 @@
     <title>Fasshion</title>
 
     <link rel="stylesheet" href="/assets/css/common-styles.css" />
+    <link rel="stylesheet" href="/assets/css/cadastro.css" />
 
     <link
       rel="stylesheet"
@@ -44,29 +45,32 @@
       </div>
     </header>
 
-    <main class="container">
+    <!-- <main class="container">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusantium
       delectus, provident ab totam dolorum corrupti aut sunt magni iusto neque,
       sequi sit laudantium aliquid facere cumque dolores consequatur natus!
-    </main>
-
-    <form action="#" autocomplete="on">
-      <div class="container">
-        <h1>Criar conta</h1>
-        <input type="radio" name="pj" id="pj" />
-        <label for="pj">Pessoa Júridica</label>
+    </main> -->
+    <div class="container">
+      <div class="create-account">
+        <h1>Criar Conta</h1>
+        <input type="radio" name="pf" id="pf" disabled>
+        <label for="pf">Pessoa Física</label>
+        <input type="radio" name="pj" id="pj" checked/>
+        <label for="pj"
+          >Pessoa Júridica</i
+        ></label>
       </div>
-      <hr />
-
+    </div>
+    <form class="form-container" action="#" autocomplete="off">
       <div class="container">
         <fieldset class="data-pj">
-          <legend>Dados Pessoais</legend>
-          <label for="name">Nome do responsavel</label>
+          <legend>  <i class="fa-solid fa-user-tie"> </i> Dados Cadastrais</legend>
+          <label for="name">Nome do Responsável</label>
           <input type="text" name="name" id="name" required />
           <label for="email">Email</label>
           <input type="email" name="email" id="email" required />
           <label for="cnpj">CNPJ</label>
-          <input type="number" name="cnpj" id="cnpj" required />
+          <input type="text" name="cnpj" id="cnpj" pattern="[0-9]+" title="Preencha apenas com números" required />
           <label for="social">Razão Social</label>
           <input type="text" name="social" id="social" required />
           <label for="ins-estadual">Inscrição Estadual</label>
@@ -80,11 +84,12 @@
         </fieldset>
       </div>
 
-      <hr />
-
       <div class="container">
-        <fieldset class="adress">
-          <legend>Endereço</legend>
+      <div class="form-container adress">
+        <fieldset class="data-adress">
+          <legend>
+            <i class="fa-solid fa-location-dot"></i>
+            Endereço</legend>
           <label for="cep">CEP</label>
           <input type="text" name="cep" id="cep" required />
           <label for="adress">Endereço</label>
@@ -138,10 +143,11 @@
           </select>
         </fieldset>
       </div>
+    </div>
 
       <div class="form-btn container">
-        <button id="cancel-bnt" type="button">Cancel</button>
-        <button id="submit-bnt" type="submit">Criar conta</button>
+        <button class="btn cancel" type="button">Cancel</button>
+        <button class="btn submit" type="submit">Criar conta</button>
       </div>
     </form>
   </body>

@@ -1,5 +1,7 @@
 /* RESET */
-
+:root {
+  --cor-teste: #fc1f1f;
+}
 * {
   padding: 0;
   margin: 0;
