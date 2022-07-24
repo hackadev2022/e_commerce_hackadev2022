@@ -7,7 +7,7 @@
   body {
     font-size: 16px;
     color: #333;
-    background-color: #F0EBD8;
+    background-color: #0D1321;
     font-family: 'Roboto', sans-serif;
   }
   
@@ -107,7 +107,7 @@
   }
 
   .text-main{
-    color: #0D1321;
+    color: #F0EBD8;
   }
 
   .cpf-cnpj{
@@ -136,13 +136,11 @@
     background-color: #748CAB;
   }
 
-  .container-login{
-    margin-top: 12%;
-  }
 
   .recuperar-senha{
     text-align: center;
     margin-top: 2%;
+    color: #cad7e7;
   }
 
 @media (max-width:770px) {
