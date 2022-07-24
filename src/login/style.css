@@ -91,6 +91,14 @@
     right: -10px;
   }
 
+  .link-style{
+    text-decoration: none;
+    background-color: rgb(16, 16, 107);
+    border-radius: 4px;
+    padding: 2.5px;
+    color: whitesmoke;
+  }
+
   .login-area, .text-main{
     display: flex;
     flex-direction: column;
