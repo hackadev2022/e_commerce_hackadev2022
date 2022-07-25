@@ -268,7 +268,7 @@ footer li:hover {
 .fjs--footer-top {
   display: flex;
   justify-content: space-around;
-  padding: 0px 10px;
+  padding: 30px 10px;
 
   background-color: var(--bg-footer);
 }
@@ -293,7 +293,8 @@ footer li:hover {
   font-weight: 300;
 }
 
-.fjs--pagamentos {
+.fjs--pagamentos,
+.fjs--social-media {
   display: flex;
   flex-wrap: wrap;
 }
