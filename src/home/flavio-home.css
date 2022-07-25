@@ -300,10 +300,6 @@ footer li:hover {
 
 .fjs--pagamentos img {
   height: 20px;
-  transition: height 0.5s;
-}
-.fjs--pagamentos img:hover {
-  height: 25px;
 }
 
 .fjs--social-icon {
