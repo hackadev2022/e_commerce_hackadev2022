@@ -288,6 +288,10 @@ footer li:hover {
   padding: 10px 10px;
 }
 
+.fjs--footer-top-item ul {
+  padding-bottom: 30px;
+}
+
 .fjs--footer-top-item li {
   line-height: 2em;
   font-weight: 300;
