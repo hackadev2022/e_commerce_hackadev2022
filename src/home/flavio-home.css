@@ -29,9 +29,7 @@ ul {
   --color-shadow-blue: #748cab;
   --color-eggshell: #f0ebd8;
   --color-black: #010101;
-
-  --color-letter: var(--color-rich-black);
-  --color-bg: var(--color-eggshell);
+  --bg-footer: rgb(244, 244, 244);
 }
 
 body {
@@ -39,8 +37,8 @@ body {
   flex-direction: column;
   font-family: monospace;
   align-items: center;
-  color: var(--color-letter);
-  background: var(--color-bg);
+  color: var(--color-rich-black);
+  background: var(--color-eggshell);
   font-size: 1em;
   font-weight: 700;
   position: absolute;
@@ -49,16 +47,21 @@ body {
   font-family: "Archivo", Arial, Helvetica, sans-serif;
 }
 
+.b-shadow {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
 header {
-  background-color: var(--color-bg);
+  background-color: var(--color-eggshell);
   height: auto;
   position: fixed;
   z-index: 1;
+  min-height: 105px;
 }
 
 .fjs--container {
   max-width: var(--container-max-width);
-  background-color: var(--color-bg);
+  background-color: var(--color-eggshell);
   width: 100%;
 }
 
@@ -114,12 +117,6 @@ header {
 
 .fjs--categorys {
   display: none;
-}
-
-.fjs--categorys ul {
-  padding: 10px 0px;
-  display: flex;
-  justify-content: space-evenly;
 }
 
 main {
@@ -184,6 +181,7 @@ main {
 .fjs--navigation-category-top {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .fjs--navigation-category-top h1 {
@@ -226,7 +224,7 @@ main {
 }
 
 .fjs--produto {
-  background-color: var(--color-bg);
+  background-color: var(--color-eggshell);
   width: 206px;
   display: flex;
   justify-content: center;
@@ -263,10 +261,6 @@ main {
   background-color: transparent;
 }
 
-.footer {
-  background-color: #d1cece;
-}
-
 footer li:hover {
   cursor: pointer;
 }
@@ -276,7 +270,7 @@ footer li:hover {
   justify-content: space-around;
   padding: 0px 10px;
 
-  background-color: #d1cece;
+  background-color: var(--bg-footer);
 }
 
 .fjs--footer-top li {
@@ -284,12 +278,36 @@ footer li:hover {
   font-size: 0.8em;
 }
 
+.fjs--footer-top-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .fjs--footer-top-item {
-  align-self: baseline;
+  padding: 10px 10px;
 }
 
 .fjs--footer-top-item li {
   line-height: 2em;
+  font-weight: 300;
+}
+
+.fjs--pagamentos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fjs--pagamentos img {
+  height: 20px;
+  transition: height 0.5s;
+}
+.fjs--pagamentos img:hover {
+  height: 25px;
+}
+
+.fjs--social-icon {
+  font-size: 20px;
 }
 
 .fjs--footer-bottom {
@@ -304,6 +322,7 @@ footer li:hover {
 .fjs--footer-bottom li {
   padding: 0 10px;
   font-size: 0.8em;
+  font-weight: 500;
 }
 
 .fjs--footer-bottom img {
@@ -354,6 +373,22 @@ footer li:hover {
   .fjs--categorys {
     display: block;
   }
+  .fjs--categorys ul {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .fjs--categorys li {
+    text-align: center;
+    width: 105px;
+    transition: letter-spacing 0.5s;
+  }
+  .fjs--categorys li:hover {
+    letter-spacing: 0.5px;
+  }
+  .fjs--categorys a {
+    text-decoration: none;
+  }
   .fjs--header-top-logo {
     display: flex;
     flex-direction: row;
@@ -375,7 +410,6 @@ footer li:hover {
 
   .fjs--navigation-category-top {
     display: flex;
-    justify-content: space-between;
     width: 100%;
   }
 
