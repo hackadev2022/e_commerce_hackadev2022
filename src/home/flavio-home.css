@@ -546,6 +546,8 @@ footer li:hover {
     justify-content: space-evenly;
   }
   .fjs--categorys li {
+    display: flex;
+    align-items: center;
     text-align: center;
     width: 105px;
     transition: letter-spacing 0.5s;
