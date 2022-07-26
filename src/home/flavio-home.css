@@ -24,11 +24,12 @@ ul {
 :root {
   --container-max-width: 1200px;
   --color-rich-black: #0d1321;
-  --color-prussian-blue: #1d2d44;
-  --color-dark-electric-blue: #3e5c76;
+  --letter-color: #1d2d44;
   --color-shadow-blue: #748cab;
   --color-eggshell: #f0ebd8;
   --color-black: #010101;
+  --border-color: #3e5c76;
+  --highlight-color: #dbd4b1;
   --bg-footer: rgb(244, 244, 244);
 }
 
@@ -37,7 +38,7 @@ body {
   flex-direction: column;
   font-family: monospace;
   align-items: center;
-  color: var(--color-rich-black);
+  color: var(--letter-color);
   background: var(--color-eggshell);
   font-size: 1em;
   font-weight: 700;
@@ -47,8 +48,8 @@ body {
   font-family: "Archivo", Arial, Helvetica, sans-serif;
 }
 
-.b-shadow {
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+body > main {
+  padding: 0;
 }
 
 header {
@@ -99,14 +100,15 @@ header {
 }
 
 .fjs--header-bottom-items i {
-  color: var(--color-prussian-blue);
+  color: var(--letter-color);
   position: absolute;
   top: 91px;
   margin-left: 16px;
 }
 
 #fjs--search-input {
-  border: var(--color-eggshell);
+  border: var(--border-color);
+  background-color: transparent;
   border-radius: 30px;
   font-size: 1.2em;
   display: block;
@@ -121,7 +123,7 @@ header {
 }
 
 main {
-  margin-top: 134px;
+  margin-top: 114px;
 }
 
 .fjs--main-baner {
@@ -134,6 +136,8 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  border-bottom: var(--border-color) solid 1px;
 }
 
 .fjs--main-baner-top {
@@ -239,10 +243,12 @@ main {
   flex-wrap: nowrap;
   margin: 10px 5px;
   padding: 0px 5px;
+  transition: background-color 0.5s;
 }
 
 .fjs--produto:hover {
   cursor: pointer;
+  background-color: var(--highlight-color);
 }
 
 .fjs--produto-img {
@@ -371,7 +377,10 @@ footer li:hover {
 
 /* --------------------- */
 
-@media (min-width: 700px) {
+@media (min-width: 769px) {
+  main {
+    margin-top: 158px;
+  }
   .fjs--produto-img {
     width: 150px;
   }
@@ -410,6 +419,7 @@ footer li:hover {
   }
 
   .fjs--header-top-logo-name {
+    font-family: "Times New Roman", serif;
     padding-left: 10px;
     display: flex;
     justify-content: center;
