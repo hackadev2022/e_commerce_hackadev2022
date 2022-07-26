@@ -1,3 +1,7 @@
+input {
+  background: transparent;
+}
+
 .text-align-right {
   text-align: right;
 }
@@ -7,7 +11,7 @@
   border-radius: 2em;
   padding: 0.75em 2em;
   text-decoration: none;
-  background-color: #333;
+  background-color: #1d2d44;
   color: #fff;
   text-decoration: none;
 }
@@ -23,8 +27,8 @@
 }
 
 .checkout {
-  --border-color: #edeaea;
-  --highlight-color: #f5f5f5;
+  --border-color: #3e5c76;
+  --highlight-color: #dbd4b1;
   --default-font-family: "Roboto, sans-serif";
 
 }
@@ -148,7 +152,7 @@
 
 .checkout__info .personal-info__address .btn-add {
   cursor: pointer;
-  background: #fff;
+  background: transparent;
   border: 1px solid var(--border-color);
   width: 2em;
   height: 2em;
@@ -187,6 +191,7 @@
   border-radius: 0.25em;
   display: flex;
   margin-bottom: 0.5em;
+  background-color: transparent;
 }
 
 .shipping .shipping__item:hover {
@@ -229,6 +234,7 @@
   border: 1px solid var(--border-color);
   border-radius: 0.25em;
   font-size: 1em;
+  background: transparent;
 }
 
 
@@ -264,6 +270,7 @@
   border-radius: 0.25em;
   display: flex;
   margin-bottom: 0.5em;
+  background: transparent;
 }
 
 .payment-method .payment-method__item:hover {

@@ -35,8 +35,8 @@ body {
 
 body {
   font-size: 16px;
-  color: #333;
-  background-color: #fff;
+  color: #1d2d44;
+  background-color: #f0ebd8;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -56,9 +56,9 @@ body > main {
 }
 
 header.main-header {
-  background-color: #fff;
+  background-color: #f0ebd8;
   padding: 0.75em 0;
-  border-bottom: 1px solid #edeaea;
+  border-bottom: 1px solid #dad6c1;
   position: fixed;
   top: 0;
   width: 100%;
