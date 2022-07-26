@@ -212,12 +212,61 @@ main {
 }
 
 .fjs--navigation-slider-item {
-  padding: 0px 20px;
+  margin: 0px 20px;
+}
+
+.fjs--navigation-slider-item:hover {
+  cursor: pointer;
+  background-color: var(--highlight-color);
+}
+/*--------------*/
+.fjs--navigation-slider-item:hover .fjs--jeans1 {
+  background-image: url("./imgs/roupas/jeans2.png");
+}
+.fjs--navigation-slider-item .fjs--jeans1 {
+  transition: 1s;
+}
+.fjs--navigation-slider-item:hover .fjs--shirt1 {
+  background-image: url("./imgs/roupas/shirt2.png");
+}
+.fjs--navigation-slider-item .fjs--shirt1 {
+  transition: 1s;
+}
+.fjs--navigation-slider-item:hover .fjs--sweater1 {
+  background-image: url("./imgs/roupas/sweater2.png");
+}
+.fjs--navigation-slider-item .fjs--sweater1 {
+  transition: 1s;
+}
+.fjs--navigation-slider-item:hover .fjs--sweatpants1 {
+  background-image: url("./imgs/roupas/sweatpants2.png");
+}
+.fjs--navigation-slider-item .fjs--sweatpants1 {
+  transition: 1s;
+}
+.fjs--navigation-slider-item:hover .fjs--sweatshirt1 {
+  background-image: url("./imgs/roupas/sweatshirt2.png");
+}
+.fjs--navigation-slider-item .fjs--sweatshirt1 {
+  transition: 1s;
+}
+/*--------------*/
+.fjs--navigation-slider-item div {
+  min-width: 180px;
+  height: 100%;
+  height: calc(180px * 1.78);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 1s;
+
+  transition: 1s;
 }
 
 .fjs--navigation-slider-item img {
   width: 180px;
-  transition: 2s;
+  transition: 1s;
 }
 
 .fjs--produtos {
@@ -242,7 +291,6 @@ main {
   text-align: center;
   flex-wrap: nowrap;
   margin: 10px 5px;
-  padding: 0px 5px;
   transition: background-color 0.5s;
 }
 
@@ -252,8 +300,110 @@ main {
 }
 
 .fjs--produto-img {
-  width: 100px;
+  min-width: 100px;
+  height: calc(100px * 1.78);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 1s;
 }
+/*---------------*/
+.fjs--jeans1 {
+  background-image: url("./imgs/roupas/jeans1.png");
+}
+.fjs--produto:hover .fjs--jeans1 {
+  background-image: url("./imgs/roupas/jeans2.png");
+}
+.fjs--jeans2 {
+  background-image: url("./imgs/roupas/jeans2.png");
+}
+.fjs--produto:hover .fjs--jeans2 {
+  background-image: url("./imgs/roupas/jeans3.png");
+}
+.fjs--jeans3 {
+  background-image: url("./imgs/roupas/jeans3.png");
+}
+.fjs--produto:hover .fjs--jeans3 {
+  background-image: url("./imgs/roupas/jeans1.png");
+}
+
+.fjs--shirt1 {
+  background-image: url("./imgs/roupas/shirt1.png");
+}
+.fjs--produto:hover .fjs--shirt1 {
+  background-image: url("./imgs/roupas/shirt2.png");
+}
+.fjs--shirt2 {
+  background-image: url("./imgs/roupas/shirt2.png");
+}
+.fjs--produto:hover .fjs--shirt2 {
+  background-image: url("./imgs/roupas/shirt3.png");
+}
+.fjs--shirt3 {
+  background-image: url("./imgs/roupas/shirt3.png");
+}
+.fjs--produto:hover .fjs--shirt3 {
+  background-image: url("./imgs/roupas/shirt1.png");
+}
+
+.fjs--sweater1 {
+  background-image: url("./imgs/roupas/sweater1.png");
+}
+.fjs--produto:hover .fjs--sweater1 {
+  background-image: url("./imgs/roupas/sweater2.png");
+}
+.fjs--sweater2 {
+  background-image: url("./imgs/roupas/sweater2.png");
+}
+.fjs--produto:hover .fjs--sweater2 {
+  background-image: url("./imgs/roupas/sweater3.png");
+}
+.fjs--sweater3 {
+  background-image: url("./imgs/roupas/sweater3.png");
+}
+.fjs--produto:hover .fjs--sweater3 {
+  background-image: url("./imgs/roupas/sweater1.png");
+}
+
+.fjs--sweatpants1 {
+  background-image: url("./imgs/roupas/sweatpants1.png");
+}
+.fjs--produto:hover .fjs--sweatpants1 {
+  background-image: url("./imgs/roupas/sweatpants2.png");
+}
+.fjs--sweatpants2 {
+  background-image: url("./imgs/roupas/sweatpants2.png");
+}
+.fjs--produto:hover .fjs--sweatpants2 {
+  background-image: url("./imgs/roupas/sweatpants3.png");
+}
+.fjs--sweatpants3 {
+  background-image: url("./imgs/roupas/sweatpants3.png");
+}
+.fjs--produto:hover .fjs--sweatpants3 {
+  background-image: url("./imgs/roupas/sweatpants1.png");
+}
+
+.fjs--sweatshirt1 {
+  background-image: url("./imgs/roupas/sweatshirt1.png");
+}
+.fjs--produto:hover .fjs--sweatshirt1 {
+  background-image: url("./imgs/roupas/sweatshirt2.png");
+}
+.fjs--sweatshirt2 {
+  background-image: url("./imgs/roupas/sweatshirt2.png");
+}
+.fjs--produto:hover .fjs--sweatshirt2 {
+  background-image: url("./imgs/roupas/sweatshirt3.png");
+}
+.fjs--sweatshirt3 {
+  background-image: url("./imgs/roupas/sweatshirt3.png");
+}
+.fjs--produto:hover .fjs--sweatshirt3 {
+  background-image: url("./imgs/roupas/sweatshirt1.png");
+}
+/*---------------*/
 
 .fjs--produto-name {
   display: flex;
