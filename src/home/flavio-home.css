@@ -52,9 +52,12 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: center;
   background-color: var(--color-eggshell);
   height: auto;
   position: fixed;
+  width: 100%;
   z-index: 1;
   min-height: 105px;
 }
@@ -98,10 +101,8 @@ header {
 .fjs--header-bottom-items i {
   color: var(--color-prussian-blue);
   position: absolute;
-  top: 73px;
-  left: 20px;
-  border: none;
-  outline: none;
+  top: 72px;
+  margin-left: 16px;
 }
 
 #fjs--search-input {
@@ -279,6 +280,7 @@ footer li:hover {
 }
 
 .fjs--footer-top-items {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
