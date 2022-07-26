@@ -101,7 +101,7 @@ header {
 .fjs--header-bottom-items i {
   color: var(--color-prussian-blue);
   position: absolute;
-  top: 72px;
+  top: 91px;
   margin-left: 16px;
 }
 
@@ -190,8 +190,7 @@ main {
   justify-content: space-between;
 }
 
-.fjs--navigation-category-top h1 {
-  font-size: 2em;
+.fjs--navigation-category-top h2 {
   margin: 20px 0;
 }
 
@@ -214,6 +213,7 @@ main {
 
 .fjs--navigation-slider-item img {
   width: 180px;
+  transition: 2s;
 }
 
 .fjs--produtos {
@@ -406,7 +406,7 @@ footer li:hover {
 
   .fjs--header-top-logo b {
     display: block;
-    font-size: 2em;
+    font-size: 1em;
   }
 
   .fjs--header-top-logo-name {
