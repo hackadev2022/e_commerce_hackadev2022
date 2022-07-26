@@ -125,6 +125,7 @@ main {
 }
 
 .fjs--main-baner {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -153,6 +154,10 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.fjs--main-baner-bottom input {
+  cursor: pointer;
 }
 
 #fjs--button-banner {
