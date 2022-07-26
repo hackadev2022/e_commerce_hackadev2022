@@ -50,6 +50,7 @@ footer:active{
 
 body {
   float: right;
+  height: 100vh;
   font-size: 16px;
   color: #1d2d44;
   background-color: #f0ebd8bc;
@@ -69,7 +70,6 @@ header{
 main{
     padding-left: 10px;
     padding-right: 10px;
-    height: 100vh;
     background-color: #f0ebd8;
 }
 
