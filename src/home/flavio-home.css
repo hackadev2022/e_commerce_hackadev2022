@@ -423,6 +423,10 @@ main {
   background-color: transparent;
 }
 
+footer {
+  font-size: 13px;
+}
+
 footer li:hover {
   cursor: pointer;
 }
