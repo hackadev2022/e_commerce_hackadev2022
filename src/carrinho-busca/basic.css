@@ -53,19 +53,28 @@ footer:active{
         float: right;
     }
 
-    main{
-        padding-bottom: 75px;
+    footer{
+        width: 340px;
+    }
+}
+
+@media (max-width: 767px) {
+    footer{
+        width: 100%;
     }
 }
 
 body {
+  position: relative;
   font-size: 16px;
   color: #1d2d44;
-  background-color: #f0ebd8bc;
+  background-color: #f0ebd8;
   font-family: 'Archivo', Arial, Helvetica, sans-serif;
 }
 
 header{
+    position: sticky;   
+    top: 0; 
     background-color: #1d2d44;
     color: #f0ebd8;
     display: flex;
@@ -78,6 +87,7 @@ header{
 main{
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 100px;
     background-color: #f0ebd8;
 }
 
@@ -110,6 +120,8 @@ span{
 }
 
 footer{
+    position: fixed;
+    bottom: 0;
     color: #f0ebd8;
     cursor: pointer;
     padding: 25PX;
