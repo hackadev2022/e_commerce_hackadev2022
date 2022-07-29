@@ -65,50 +65,50 @@ header {
   border-bottom: 1px solid #dad6c1;
 }
 
-.fjs--container {
+.container {
   max-width: var(--container-max-width);
   background-color: var(--color-eggshell);
   width: 100%;
 }
 
-.fjs--logo {
+.logo {
   font-size: 2.5em;
   padding: 10px;
 }
 
-.fjs--menu-icons {
+.menu-icons {
   font-size: 1.2em;
 }
 
-.fjs--header-top-items {
+.header-top-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.fjs--header-top-logo b {
+.header-top-logo b {
   display: none;
 }
 
-.fjs--header-top-items i {
+.header-top-items i {
   padding: 10px;
 }
 
-.fjs--header-bottom-items {
+.header-bottom-items {
   display: flex;
   justify-content: center;
   align-items: baseline;
   width: 100%;
 }
 
-.fjs--header-bottom-items i {
+.header-bottom-items i {
   color: var(--letter-color);
   position: absolute;
   top: 96px;
   margin-left: 16px;
 }
 
-#fjs--search-input {
+#search-input {
   border: 1px solid var(--search-border-color);
   background-color: transparent;
   border-radius: 30px;
@@ -120,15 +120,15 @@ header {
   margin: 5px;
 }
 
-.fjs--categorys {
+.categorys {
   display: none;
 }
 
 main {
-  margin-top: 114px;
+  margin-top: 130px;
 }
 
-.fjs--main-baner {
+.main-baner {
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -142,7 +142,7 @@ main {
   border-bottom: var(--border-color) solid 1px;
 }
 
-.fjs--main-baner-top {
+.main-baner-top {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -150,62 +150,62 @@ main {
   margin-bottom: 30px;
 }
 
-.fjs--main-baner-top h2 {
+.main-baner-top h2 {
   font-size: 2em;
   font-weight: bold;
 }
 
-.fjs--main-baner-bottom {
+.main-baner-bottom {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.fjs--main-baner-bottom input {
+.main-baner-bottom input {
   cursor: pointer;
 }
 
-#fjs--button-banner {
+#button-banner {
   padding: 10px 15px;
   border-radius: 20px;
   border: #ece3dd 1px solid;
 }
 
-.fjs--main-baner-button-icon {
+.main-baner-button-icon {
   height: 40px;
   font-size: 1.3em;
 }
 
-.fjs--main-baner-button-icon i {
+.main-baner-button-icon i {
   font-size: 1.3em;
   animation: slide-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s infinite
     both;
 }
 
-.fjs--navigation-category {
+.navigation-category {
   height: auto;
   margin-top: 40px;
   margin-bottom: 60px;
   padding: 0px 10px;
 }
 
-.fjs--navigation-category-top {
+.navigation-category-top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.fjs--navigation-category-top h2 {
+.navigation-category-top h2 {
   margin: 20px 0;
 }
 
-.fjs--navigation-slider-control {
+.navigation-slider-control {
   align-self: flex-end;
   margin-bottom: 20px;
 }
 
-.fjs--navigation-slider {
+.navigation-slider {
   display: flex;
   overflow: hidden;
   margin: 0 auto;
@@ -213,47 +213,47 @@ main {
   flex-wrap: nowrap;
 }
 
-.fjs--navigation-slider-item {
+.navigation-slider-item {
   margin: 0px 20px;
 }
 
-.fjs--navigation-slider-item:hover {
+.navigation-slider-item:hover {
   cursor: pointer;
   background-color: var(--highlight-color);
 }
 /*--------------*/
-.fjs--navigation-slider-item:hover .fjs--jeans1 {
+.navigation-slider-item:hover .jeans1 {
   background-image: url("./imgs/roupas/jeans2.png");
 }
-.fjs--navigation-slider-item .fjs--jeans1 {
+.navigation-slider-item .jeans1 {
   transition: 1s;
 }
-.fjs--navigation-slider-item:hover .fjs--shirt1 {
+.navigation-slider-item:hover .shirt1 {
   background-image: url("./imgs/roupas/shirt2.png");
 }
-.fjs--navigation-slider-item .fjs--shirt1 {
+.navigation-slider-item .shirt1 {
   transition: 1s;
 }
-.fjs--navigation-slider-item:hover .fjs--sweater1 {
+.navigation-slider-item:hover .sweater1 {
   background-image: url("./imgs/roupas/sweater2.png");
 }
-.fjs--navigation-slider-item .fjs--sweater1 {
+.navigation-slider-item .sweater1 {
   transition: 1s;
 }
-.fjs--navigation-slider-item:hover .fjs--sweatpants1 {
+.navigation-slider-item:hover .sweatpants1 {
   background-image: url("./imgs/roupas/sweatpants2.png");
 }
-.fjs--navigation-slider-item .fjs--sweatpants1 {
+.navigation-slider-item .sweatpants1 {
   transition: 1s;
 }
-.fjs--navigation-slider-item:hover .fjs--sweatshirt1 {
+.navigation-slider-item:hover .sweatshirt1 {
   background-image: url("./imgs/roupas/sweatshirt2.png");
 }
-.fjs--navigation-slider-item .fjs--sweatshirt1 {
+.navigation-slider-item .sweatshirt1 {
   transition: 1s;
 }
 /*--------------*/
-.fjs--navigation-slider-item div {
+.navigation-slider-item div {
   min-width: 180px;
   height: 100%;
   height: calc(180px * 1.78);
@@ -266,12 +266,12 @@ main {
   transition: 1s;
 }
 
-.fjs--navigation-slider-item img {
+.navigation-slider-item img {
   width: 180px;
   transition: 1s;
 }
 
-.fjs--produtos {
+.produtos {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -279,12 +279,12 @@ main {
   flex-wrap: wrap;
 }
 
-.fjs--produtos-title {
+.produtos-title {
   width: 100%;
   padding-left: 10px;
 }
 
-.fjs--produto {
+.produto {
   background-color: var(--color-eggshell);
   width: 260px;
   display: flex;
@@ -296,11 +296,11 @@ main {
   transition: background-color 0.5s;
 }
 
-.fjs--produto:hover {
+.produto:hover {
   cursor: pointer;
 }
 
-.fjs--produto-img {
+.produto-img {
   min-width: 100px;
   height: calc(100px * 1.78);
 
@@ -310,116 +310,116 @@ main {
   transition: background-image 1s;
 }
 
-.fjs--produto-info {
+.produto-info {
   text-align: left;
   padding-left: 15px;
 }
 
-.fjs--produto-info strong {
+.produto-info strong {
   font-size: 16px;
 }
 
-.fjs--produto-info del {
+.produto-info del {
   font-size: 10px;
 }
 /*---------------*/
-.fjs--jeans1 {
+.jeans1 {
   background-image: url("./imgs/roupas/jeans1.png");
 }
-.fjs--produto:hover .fjs--jeans1 {
+.produto:hover .jeans1 {
   background-image: url("./imgs/roupas/jeans2.png");
 }
-.fjs--jeans2 {
+.jeans2 {
   background-image: url("./imgs/roupas/jeans2.png");
 }
-.fjs--produto:hover .fjs--jeans2 {
+.produto:hover .jeans2 {
   background-image: url("./imgs/roupas/jeans3.png");
 }
-.fjs--jeans3 {
+.jeans3 {
   background-image: url("./imgs/roupas/jeans3.png");
 }
-.fjs--produto:hover .fjs--jeans3 {
+.produto:hover .jeans3 {
   background-image: url("./imgs/roupas/jeans1.png");
 }
 
-.fjs--shirt1 {
+.shirt1 {
   background-image: url("./imgs/roupas/shirt1.png");
 }
-.fjs--produto:hover .fjs--shirt1 {
+.produto:hover .shirt1 {
   background-image: url("./imgs/roupas/shirt2.png");
 }
-.fjs--shirt2 {
+.shirt2 {
   background-image: url("./imgs/roupas/shirt2.png");
 }
-.fjs--produto:hover .fjs--shirt2 {
+.produto:hover .shirt2 {
   background-image: url("./imgs/roupas/shirt3.png");
 }
-.fjs--shirt3 {
+.shirt3 {
   background-image: url("./imgs/roupas/shirt3.png");
 }
-.fjs--produto:hover .fjs--shirt3 {
+.produto:hover .shirt3 {
   background-image: url("./imgs/roupas/shirt1.png");
 }
 
-.fjs--sweater1 {
+.sweater1 {
   background-image: url("./imgs/roupas/sweater1.png");
 }
-.fjs--produto:hover .fjs--sweater1 {
+.produto:hover .sweater1 {
   background-image: url("./imgs/roupas/sweater2.png");
 }
-.fjs--sweater2 {
+.sweater2 {
   background-image: url("./imgs/roupas/sweater2.png");
 }
-.fjs--produto:hover .fjs--sweater2 {
+.produto:hover .sweater2 {
   background-image: url("./imgs/roupas/sweater3.png");
 }
-.fjs--sweater3 {
+.sweater3 {
   background-image: url("./imgs/roupas/sweater3.png");
 }
-.fjs--produto:hover .fjs--sweater3 {
+.produto:hover .sweater3 {
   background-image: url("./imgs/roupas/sweater1.png");
 }
 
-.fjs--sweatpants1 {
+.sweatpants1 {
   background-image: url("./imgs/roupas/sweatpants1.png");
 }
-.fjs--produto:hover .fjs--sweatpants1 {
+.produto:hover .sweatpants1 {
   background-image: url("./imgs/roupas/sweatpants2.png");
 }
-.fjs--sweatpants2 {
+.sweatpants2 {
   background-image: url("./imgs/roupas/sweatpants2.png");
 }
-.fjs--produto:hover .fjs--sweatpants2 {
+.produto:hover .sweatpants2 {
   background-image: url("./imgs/roupas/sweatpants3.png");
 }
-.fjs--sweatpants3 {
+.sweatpants3 {
   background-image: url("./imgs/roupas/sweatpants3.png");
 }
-.fjs--produto:hover .fjs--sweatpants3 {
+.produto:hover .sweatpants3 {
   background-image: url("./imgs/roupas/sweatpants1.png");
 }
 
-.fjs--sweatshirt1 {
+.sweatshirt1 {
   background-image: url("./imgs/roupas/sweatshirt1.png");
 }
-.fjs--produto:hover .fjs--sweatshirt1 {
+.produto:hover .sweatshirt1 {
   background-image: url("./imgs/roupas/sweatshirt2.png");
 }
-.fjs--sweatshirt2 {
+.sweatshirt2 {
   background-image: url("./imgs/roupas/sweatshirt2.png");
 }
-.fjs--produto:hover .fjs--sweatshirt2 {
+.produto:hover .sweatshirt2 {
   background-image: url("./imgs/roupas/sweatshirt3.png");
 }
-.fjs--sweatshirt3 {
+.sweatshirt3 {
   background-image: url("./imgs/roupas/sweatshirt3.png");
 }
-.fjs--produto:hover .fjs--sweatshirt3 {
+.produto:hover .sweatshirt3 {
   background-image: url("./imgs/roupas/sweatshirt1.png");
 }
 /*---------------*/
 
-.fjs--produto-name {
+.produto-name {
   display: flex;
   flex-direction: row;
   margin: 2px 0px;
@@ -428,12 +428,12 @@ main {
   color: goldenrod;
 }
 
-.fjs--produto-price {
+.produto-price {
   font-size: 12px;
   margin: 2px 0px;
 }
 
-.fjs--produto-price mark {
+.produto-price mark {
   background-color: transparent;
 }
 
@@ -445,7 +445,7 @@ footer li:hover {
   cursor: pointer;
 }
 
-.fjs--footer-top {
+.footer-top {
   display: flex;
   justify-content: space-around;
   padding: 30px 10px;
@@ -453,71 +453,71 @@ footer li:hover {
   background-color: var(--bg-footer);
 }
 
-.fjs--footer-top li {
+.footer-top li {
   padding: 0 10px;
   font-size: 0.8em;
 }
 
-.fjs--footer-top-items {
+.footer-top-items {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.fjs--footer-top-item {
+.footer-top-item {
   padding: 10px 10px;
 }
 
-.fjs--footer-top-item ul {
+.footer-top-item ul {
   padding-bottom: 30px;
 }
 
-.fjs--footer-top-item li {
+.footer-top-item li {
   line-height: 2em;
   font-weight: 300;
 }
 
-.fjs--pagamentos,
-.fjs--social-media {
+.pagamentos,
+.social-media {
   display: flex;
   flex-wrap: wrap;
 }
 
-.fjs--pagamentos img {
+.pagamentos img {
   height: 20px;
 }
 
-.fjs--social-icon {
+.social-icon {
   font-size: 20px;
 }
 
-.fjs--footer-bottom {
+.footer-bottom {
   padding: 0px 10px;
 }
 
-.fjs--footer-bottom ul {
+.footer-bottom ul {
   display: flex;
   flex-wrap: wrap;
 }
 
-.fjs--footer-bottom li {
+.footer-bottom li {
   padding: 0 10px;
   font-size: 0.8em;
   font-weight: 500;
 }
 
-.fjs--footer-bottom img {
+.footer-bottom img {
   width: 20px;
   height: 20px;
   border-radius: 50%;
 }
 
-.fjs--footer-bottom li {
+.footer-bottom li {
   line-height: 2em;
 }
 
-.fjs--footer-bottom li div {
+.footer-bottom li div {
   display: flex;
   align-items: center;
 }
@@ -538,48 +538,48 @@ footer li:hover {
 
 @media (min-width: 769px) {
   main {
-    margin-top: 158px;
+    margin-top: 188px;
   }
-  .fjs--produto-img {
+  .produto-img {
     width: 150px;
   }
-  #fjs--menu-bars-icon {
+  #menu-bars-icon {
     display: none;
   }
-  .fjs--categorys {
+  .categorys {
     display: block;
   }
-  .fjs--categorys ul {
+  .categorys ul {
     padding: 10px 0px;
     display: flex;
     justify-content: space-evenly;
   }
-  .fjs--categorys li {
+  .categorys li {
     display: flex;
     align-items: center;
     text-align: center;
     width: 105px;
     transition: letter-spacing 0.5s;
   }
-  .fjs--categorys li:hover {
+  .categorys li:hover {
     letter-spacing: 0.5px;
   }
-  .fjs--categorys a {
+  .categorys a {
     text-decoration: none;
   }
-  .fjs--header-top-logo {
+  .header-top-logo {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     width: auto;
   }
 
-  .fjs--header-top-logo b {
+  .header-top-logo b {
     display: block;
     font-size: 1em;
   }
 
-  .fjs--header-top-logo-name {
+  .header-top-logo-name {
     font-family: "Times New Roman", serif;
     padding-left: 10px;
     display: flex;
@@ -587,16 +587,16 @@ footer li:hover {
     align-items: center;
   }
 
-  .fjs--navigation-category-top {
+  .navigation-category-top {
     display: flex;
     width: 100%;
   }
 
-  .fjs--navigation-category-top br {
+  .navigation-category-top br {
     display: none;
   }
 
-  .fjs--produto {
+  .produto {
     width: 300px;
   }
 } ;
