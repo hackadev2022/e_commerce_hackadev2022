@@ -54,8 +54,8 @@
       
       <div class="create-account">
         <h1>Criar Conta</h1>
-        <input type="radio" name="pf" id="pf" disabled>
-        <label for="pf">Pessoa Física</label>
+        <!-- <input type="radio" name="pf" id="pf" disabled>
+        <label for="pf">Pessoa Física</label> -->
         <input type="radio" name="pj" id="pj" checked/>
         <label for="pj"
           >Pessoa Júridica</i
@@ -69,21 +69,21 @@
             <fieldset class="data-pj">
           <legend>  <i class="fa-solid fa-user-tie"> </i> Dados Cadastrais</legend>
           <label for="name">Nome do Responsável</label>
-          <input type="text" name="name" id="name" required />
+          <input type="text" name="name" id="name" title="Este campo é obrigátorio" placeholder="Insira seu nome completo" required />
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" required />
+          <input type="email" name="email" id="email" placeholder="Insira um email válido" required />
           <label for="cnpj">CNPJ</label>
-          <input type="text" name="cnpj" id="cnpj" pattern="[0-9]+" title="Preencha apenas com números" required />
+          <input type="text" name="cnpj" id="cnpj" placeholder="Número do CNPJ sem os pontos" pattern="[0-9]+" title="Preencha apenas com números" mask="99.999.999/9999-99" maxlength="14" required />
           <label for="social">Razão Social</label>
-          <input type="text" name="social" id="social" required />
+          <input type="text" name="social" id="social"  required />
           <label for="ins-estadual">Inscrição Estadual</label>
-          <input type="number" name="ins-estadual" id="ins-estadual" required />
+          <input type="text" name="ins-estadual" id="ins-estadual"  pattern="[0-9]+" required />
           <label for="cell">Celular</label>
-          <input type="tel" name="cell" id="cell" />
+          <input type="tel" name="cell" placeholder="Telefone celular | Apenas números" maxlength="11" id="cell" />
           <label for="tel">Telefone Fixo</label>
-          <input type="tel" name="tel" id="tel" required />
+          <input type="tel" name="tel" id="tel" placeholder="Telefone fixo | Apenas números" maxlength="11" required />
           <label for="seller">Nome do vendedor</label>
-          <input type="text" name="seller" id="seller" required />
+          <input type="text" name="seller" id="seller"  required />
             </fieldset>
           </div>
 
@@ -93,11 +93,11 @@
             <i class="fa-solid fa-location-dot"></i>
             Endereço</legend>
           <label for="cep">CEP</label>
-          <input type="text" name="cep" id="cep" required />
+          <input type="text" name="cep" id="cep" placeholder="Insira seu CEP | Apenas números" required />
           <label for="adress">Endereço</label>
-          <input type="text" name="adress" id="adress" required />
+          <input type="text" name="adress" id="adress" " required />
           <label for="a-num">Número</label>
-          <input type="number" name="a-num" id="a-num" />
+          <input type="number" name="a-num" id="a-num" pattern="[0-9]+" />
           <label for="compliment">Complemento</label>
           <input type="text" name="compliment" id="compliment" />
           <label for="a-refer">Rêferencia</label>
