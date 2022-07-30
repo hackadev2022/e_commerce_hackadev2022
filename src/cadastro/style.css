@@ -1,0 +1,19 @@
+:root {
+    --container-max-width: 1200px;
+    --color-rich-black: #0d1321;
+    --letter-color: #1d2d44;
+    --color-shadow-blue: #748cab;
+    --color-eggshell: #f0ebd8;
+    --color-black: #010101;
+    --border-color: #3e5c76;
+    --highlight-color: #dbd4b1;
+  }
+
+body{
+    background-color: var(--color-eggshell);
+    color: var(--color-rich-black);
+}
+
+.container{
+    color: var(--color-rich-black);
+}
