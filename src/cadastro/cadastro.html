@@ -51,101 +51,149 @@
       sequi sit laudantium aliquid facere cumque dolores consequatur natus!
     </main> -->
     <div class="container">
-      
       <div class="create-account">
         <h1>Criar Conta</h1>
         <!-- <input type="radio" name="pf" id="pf" disabled>
         <label for="pf">Pessoa Física</label> -->
-        <input type="radio" name="pj" id="pj" checked/>
-        <label for="pj"
-          >Pessoa Júridica</i
-        ></label>
+        <input type="radio" name="pj" id="pj" checked />
+        <label for="pj">Pessoa Júridica ></label>
       </div>
     </div>
-    <form  action="#" autocomplete="off">
+    <form action="#" autocomplete="off">
       <div class="container">
         <div class="form-container">
           <div class="container">
             <fieldset class="data-pj">
-          <legend>  <i class="fa-solid fa-user-tie"> </i> Dados Cadastrais</legend>
-          <label for="name">Nome do Responsável</label>
-          <input type="text" name="name" id="name" title="Este campo é obrigátorio" placeholder="Insira seu nome completo" required />
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Insira um email válido" required />
-          <label for="cnpj">CNPJ</label>
-          <input type="text" name="cnpj" id="cnpj" placeholder="Número do CNPJ sem os pontos" pattern="[0-9]+" title="Preencha apenas com números" mask="99.999.999/9999-99" maxlength="14" required />
-          <label for="social">Razão Social</label>
-          <input type="text" name="social" id="social"  required />
-          <label for="ins-estadual">Inscrição Estadual</label>
-          <input type="text" name="ins-estadual" id="ins-estadual"  pattern="[0-9]+" required />
-          <label for="cell">Celular</label>
-          <input type="tel" name="cell" placeholder="Telefone celular | Apenas números" maxlength="11" id="cell" />
-          <label for="tel">Telefone Fixo</label>
-          <input type="tel" name="tel" id="tel" placeholder="Telefone fixo | Apenas números" maxlength="11" required />
-          <label for="seller">Nome do vendedor</label>
-          <input type="text" name="seller" id="seller"  required />
+              <legend>
+                <i class="fa-solid fa-user-tie"> </i> Dados Cadastrais
+              </legend>
+              <label for="name">Nome do Responsável</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                title="Este campo é obrigátorio"
+                placeholder="Insira seu nome completo"
+                required
+              />
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Insira um email válido"
+                required
+              />
+              <label for="cnpj">CNPJ</label>
+              <input
+                type="text"
+                name="cnpj"
+                id="cnpj"
+                placeholder="Número do CNPJ sem os pontos"
+                pattern="[0-9]+"
+                title="Preencha apenas com números"
+                mask="99.999.999/9999-99"
+                maxlength="14"
+                required
+              />
+              <label for="social">Razão Social</label>
+              <input type="text" name="social" id="social" required />
+              <label for="ins-estadual">Inscrição Estadual</label>
+              <input
+                type="text"
+                name="ins-estadual"
+                id="ins-estadual"
+                pattern="[0-9]+"
+                required
+              />
+              <label for="cell">Celular</label>
+              <input
+                type="tel"
+                name="cell"
+                placeholder="Telefone celular | Apenas números"
+                maxlength="11"
+                id="cell"
+              />
+              <label for="tel">Telefone Fixo</label>
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="Telefone fixo | Apenas números"
+                maxlength="11"
+                required
+              />
+              <label for="seller">Nome do vendedor</label>
+              <input type="text" name="seller" id="seller" required />
             </fieldset>
           </div>
 
-           <div class="container">
+          <div class="container">
             <fieldset class="data-adress">
-          <legend>
-            <i class="fa-solid fa-location-dot"></i>
-            Endereço</legend>
-          <label for="cep">CEP</label>
-          <input type="text" name="cep" id="cep" placeholder="Insira seu CEP | Apenas números" required />
-          <label for="adress">Endereço</label>
-          <input type="text" name="adress" id="adress" " required />
-          <label for="a-num">Número</label>
-          <input type="number" name="a-num" id="a-num" pattern="[0-9]+" />
-          <label for="compliment">Complemento</label>
-          <input type="text" name="compliment" id="compliment" />
-          <label for="a-refer">Rêferencia</label>
-          <input type="text" name="a-refer" id="a-refer" />
-          <label for="a-distrit">Bairro</label>
-          <input type="text" name="a-distrit" id="a-distrit" required />
-          <label for="a-city">Cidade</label>
-          <input list="a-city" name="a-city" required />
-          <datalist id="a-city">
-            <option value="Goiânia"></option>
-            <option value="Aparecida de Goiânia"></option>
-            <option value="Trindade"></option>
-            <option value="Goianira"></option>
-            <option value="Anápolis"></option>
-          </datalist>
+              <legend>
+                <i class="fa-solid fa-location-dot"></i>
+                Endereço
+              </legend>
+              <label for="cep">CEP</label>
+              <input
+                type="text"
+                name="cep"
+                id="cep"
+                placeholder="Insira seu CEP | Apenas números"
+                required
+              />
+              <label for="adress">Endereço</label>
+              <input type="text" name="adress" id="adress" " required />
+              <label for="a-num">Número</label>
+              <input type="number" name="a-num" id="a-num" pattern="[0-9]+" />
+              <label for="compliment">Complemento</label>
+              <input type="text" name="compliment" id="compliment" />
+              <label for="a-refer">Rêferencia</label>
+              <input type="text" name="a-refer" id="a-refer" />
+              <label for="a-distrit">Bairro</label>
+              <input type="text" name="a-distrit" id="a-distrit" required />
+              <label for="a-city">Cidade</label>
+              <input list="a-city" name="a-city" required />
+              <datalist id="a-city">
+                <option value="Goiânia"></option>
+                <option value="Aparecida de Goiânia"></option>
+                <option value="Trindade"></option>
+                <option value="Goianira"></option>
+                <option value="Anápolis"></option>
+              </datalist>
 
-          <label for="a-state">Estado</label>
-          <select name="a-state" id="a-state" required>
-            <option value="">Selecione</option>
-            <option value="SP">São Paulo</option>
-            <option value="RJ">Rio de Janeiro</option>
-            <option value="MG">Minas Gerais</option>
-            <option value="GO">Goías</option>
-            <option value="AC">Acre</option>
-            <option value="AL">Alagoas</option>
-            <option value="AP">Amapá</option>
-            <option value="AM">Amazonas</option>
-            <option value="BA">Bahia</option>
-            <option value="CE">Ceará</option>
-            <option value="ES">Espírito Santo</option>
-            <option value="MA">Maranhão</option>
-            <option value="MT">Mato Grosso</option>
-            <option value="MS">Mato Grosso do Sul</option>
-            <option value="PA">Pará</option>
-            <option value="PE">Pernambuco</option>
-            <option value="PI">Piauí</option>
-            <option value="RN">Rio Grande do Norte</option>
-            <option value="RS">Rio Grande do Sul</option>
-            <option value="RO">Rondônia</option>
-            <option value="RR">Roraima</option>
-            <option value="SC">Santa Catarina</option>
-            <option value="SE">Sergipe</option>
-            <option value="TO">Tocantins</option>
-            <option value="DF">Distrito Federal</option>
-          </select>
+              <label for="a-state">Estado</label>
+              <select name="a-state" id="a-state" required>
+                <option value="">Selecione</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="GO">Goías</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="PA">Pará</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="DF">Distrito Federal</option>
+              </select>
             </fieldset>
-            </div>
-       </div>
+          </div>
+        </div>
       </div>
 
       <div class="form-btn container">
@@ -155,7 +203,12 @@
     </form>
 
     <footer>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, eligendi vero obcaecati, magni distinctio incidunt illum provident laborum dolores blanditiis dolore facilis accusamus sequi dolorum odio sunt mollitia quam perspiciatis?</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
+        eligendi vero obcaecati, magni distinctio incidunt illum provident
+        laborum dolores blanditiis dolore facilis accusamus sequi dolorum odio
+        sunt mollitia quam perspiciatis?
+      </p>
     </footer>
   </body>
 </html>
