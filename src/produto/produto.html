@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fasshion</title>
 
-    <link rel="stylesheet" href="/assets/css/common-styles.css" />
+    <link rel="stylesheet" href="../../assets/css/common-styles.css" />
+    <link rel="stylesheet" href="produto.css" />
 
     <link
       rel="stylesheet"
@@ -45,9 +46,48 @@
     </header>
 
     <main class="container">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusantium
-      delectus, provident ab totam dolorum corrupti aut sunt magni iusto neque,
-      sequi sit laudantium aliquid facere cumque dolores consequatur natus!
+      <div class="main-container">
+        <!-- Começando a div de contéudo : imagem -->
+        <div class="image-container">
+          <img
+            src="./imagens/camisetabranca2.jpg"
+            alt="camiseta branca masculina"
+          />
+        </div>
+        <!-- Fim da div de contéudo : imagem -->
+
+        <!-- Começando a div de contéudo : informações -->
+        <div class="container-info">
+          <div class="description-payment">
+            <h3 class="description-product">CAMISETA BRANCA MASCULINA</h3>
+            <p class="price">
+              R$69,00 <span id="payment">em até 3x R$23,00</span>
+            </p>
+          </div>
+          <!-- Botões de tamanho -->
+          <div class="size-btn">
+            <p class="gray-text">Escolha o tamanho</p>
+            <div class="size-btn-container">
+              <button class="size-item-btn">P</button>
+              <button class="size-item-btn">M</button>
+              <button class="size-item-btn">G</button>
+              <button class="size-item-btn">GG</button>
+            </div>
+          </div>
+          <div class="product-amount">
+            <p class="gray-text">Escolha a quantidade</p>
+            <button class="add-amount">+</button>
+            <span>1</span>
+            <button class="min-amount">-</button>
+          </div>
+          <div class="car-shop">
+            <button class="shop-car">Adicionar ao carrinho</button>
+          </div>
+
+          <!-- Botões de quantidade -->
+          <!-- Botão de adicionar ao carrinho -->
+        </div>
+      </div>
     </main>
   </body>
 </html>
