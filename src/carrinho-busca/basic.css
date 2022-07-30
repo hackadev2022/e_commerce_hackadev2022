@@ -48,16 +48,35 @@ footer:active{
 
 /* MAIN */
 
+@media (min-width: 767px) {
+    body {
+        float: right;
+    }
+
+    footer{
+        width: 340px;
+    }
+}
+
+@media (max-width: 767px) {
+    footer{
+        width: 100%;
+    }
+}
+
 body {
-  float: right;
+  position: relative;
   font-size: 16px;
-  color: #333;
-  background-color: rgb(238, 238, 238);
+  color: #1d2d44;
+  background-color: #f0ebd8;
   font-family: 'Archivo', Arial, Helvetica, sans-serif;
 }
 
 header{
-    background-color: rgb(255, 255, 255);
+    position: sticky;   
+    top: 0; 
+    background-color: #1d2d44;
+    color: #f0ebd8;
     display: flex;
     justify-content: space-between; 
     align-items: center;
@@ -65,15 +84,11 @@ header{
     padding-left: 10px;
 }
 
-header, div:nth-child(1){
-    font-weight: bold;
-}
-
 main{
     padding-left: 10px;
     padding-right: 10px;
-    height: 100vh;
-    background-color: rgb(245, 245, 245);
+    padding-bottom: 100px;
+    background-color: #f0ebd8;
 }
 
 img{
@@ -81,8 +96,10 @@ img{
 }
 
 figcaption{
-    padding-left: 5px;
-    color: rgb(194, 4, 4);
+    font-size: 13px;
+    padding-top: 3px;
+    padding-left: 13px;
+    color: #3e5c76;
     cursor: pointer;
 }
 
@@ -95,6 +112,7 @@ p{
 }
 
 span{
+    color: #1d2d44;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 18px;
@@ -102,10 +120,12 @@ span{
 }
 
 footer{
-    color: white;
+    position: fixed;
+    bottom: 0;
+    color: #f0ebd8;
     cursor: pointer;
     padding: 25PX;
-    background-color: rgb(9, 9, 9);
+    background-color: #1d2d44;
 }
 
 .layout{
@@ -122,37 +142,46 @@ footer{
 
 .shop-line-2{
     font-size: 12px;
-    color: rgb(133, 133, 133);
+    color: #3e5c76;
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
 }
 
 .minus-products, .plus-products{
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    background-color: rgba(251, 249, 249, 0.393);
+    border-color: #1d2d44;
+    border-style: solid;
+    border-radius: 15px;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: #f0ebd8;
     cursor: pointer;
 }
 
 #subtotal{
-    font-weight: bold;
     text-align: center;
 }
 
 #busca{
+    color: #3e5c76;
     width: 100%;
     height: 35px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 5px;
-    border: 1.4px;
-    border-style: solid;
-    border-color: rgb(158, 156, 156);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1.4px solid #3e5c76;
     font-weight: bold;
-    padding-left: 2%;
+    padding-left: 12%;
+    padding-right: 2%;
+}
+
+#back i{
+  font-size: 15px;
+  position: absolute;
+  top: 78px;
+  margin-left: 10px;
 }
 
 #back{
@@ -160,7 +189,7 @@ footer{
 }
 
 #num-products{
-    color: rgb(133, 133, 133);
+    color: #3e5c76;
     padding-left: 15px;
     font-size: 13px;
 }
