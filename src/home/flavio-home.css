@@ -1,0 +1,602 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  opacity: 0.9;
+}
+
+a:active {
+  opacity: 0.8;
+}
+
+ul {
+  list-style: none;
+}
+/* ----------------- */
+
+:root {
+  --container-max-width: 1200px;
+  --color-rich-black: #0d1321;
+  --letter-color: #1d2d44;
+  --color-shadow-blue: #748cab;
+  --color-eggshell: #f0ebd8;
+  --color-black: #010101;
+  --border-color: #3e5c76;
+  --highlight-color: #dbd4b1;
+  --search-border-color: #dad6c1;
+  --bg-footer: rgb(244, 244, 244);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+  align-items: center;
+  color: var(--letter-color);
+  background: var(--color-eggshell);
+  font-size: 1em;
+  font-weight: 700;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  font-family: "Archivo", Arial, Helvetica, sans-serif;
+}
+
+body > main {
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-eggshell);
+  height: auto;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  min-height: 105px;
+  border-bottom: 1px solid #dad6c1;
+}
+
+.container {
+  max-width: var(--container-max-width);
+  background-color: var(--color-eggshell);
+  width: 100%;
+}
+
+.logo {
+  font-size: 2.5em;
+  padding: 10px;
+}
+
+.menu-icons {
+  font-size: 1.2em;
+}
+
+.header-top-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top-logo b {
+  display: none;
+}
+
+.header-top-items i {
+  padding: 10px;
+}
+
+.header-bottom-items {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+}
+
+.header-bottom-items i {
+  color: var(--letter-color);
+  position: absolute;
+  top: 96px;
+  margin-left: 16px;
+}
+
+#search-input {
+  border: 1px solid var(--search-border-color);
+  background-color: transparent;
+  border-radius: 30px;
+  font-size: 1.2em;
+  display: block;
+  width: 100%;
+  height: 39px;
+  padding: 1em 2em;
+  margin: 5px;
+}
+
+.categorys {
+  display: none;
+}
+
+main {
+  margin-top: 130px;
+}
+
+.main-baner {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-image: url("./imgs/banner_ilustrativo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  border-bottom: var(--border-color) solid 1px;
+}
+
+.main-baner-top {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.main-baner-top h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.main-baner-bottom {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main-baner-bottom input {
+  cursor: pointer;
+}
+
+#button-banner {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: #ece3dd 1px solid;
+}
+
+.main-baner-button-icon {
+  height: 40px;
+  font-size: 1.3em;
+}
+
+.main-baner-button-icon i {
+  font-size: 1.3em;
+  animation: slide-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s infinite
+    both;
+}
+
+.navigation-category {
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  padding: 0px 10px;
+}
+
+.navigation-category-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigation-category-top h2 {
+  margin: 20px 0;
+}
+
+.navigation-slider-control {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.navigation-slider {
+  display: flex;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 350px;
+  flex-wrap: nowrap;
+}
+
+.navigation-slider-item {
+  margin: 0px 20px;
+}
+
+.navigation-slider-item:hover {
+  cursor: pointer;
+  background-color: var(--highlight-color);
+}
+/*--------------*/
+.navigation-slider-item:hover .jeans1 {
+  background-image: url("./imgs/roupas/jeans2.png");
+}
+.navigation-slider-item .jeans1 {
+  transition: 1s;
+}
+.navigation-slider-item:hover .shirt1 {
+  background-image: url("./imgs/roupas/shirt2.png");
+}
+.navigation-slider-item .shirt1 {
+  transition: 1s;
+}
+.navigation-slider-item:hover .sweater1 {
+  background-image: url("./imgs/roupas/sweater2.png");
+}
+.navigation-slider-item .sweater1 {
+  transition: 1s;
+}
+.navigation-slider-item:hover .sweatpants1 {
+  background-image: url("./imgs/roupas/sweatpants2.png");
+}
+.navigation-slider-item .sweatpants1 {
+  transition: 1s;
+}
+.navigation-slider-item:hover .sweatshirt1 {
+  background-image: url("./imgs/roupas/sweatshirt2.png");
+}
+.navigation-slider-item .sweatshirt1 {
+  transition: 1s;
+}
+/*--------------*/
+.navigation-slider-item div {
+  min-width: 180px;
+  height: 100%;
+  height: calc(180px * 1.78);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 1s;
+
+  transition: 1s;
+}
+
+.navigation-slider-item img {
+  width: 180px;
+  transition: 1s;
+}
+
+.produtos {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.produtos-title {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.produto {
+  background-color: var(--color-eggshell);
+  width: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: nowrap;
+  margin: 10px 5px;
+  transition: background-color 0.5s;
+}
+
+.produto:hover {
+  cursor: pointer;
+}
+
+.produto-img {
+  min-width: 100px;
+  height: calc(100px * 1.78);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 1s;
+}
+
+.produto-info {
+  text-align: left;
+  padding-left: 15px;
+}
+
+.produto-info strong {
+  font-size: 16px;
+}
+
+.produto-info del {
+  font-size: 10px;
+}
+/*---------------*/
+.jeans1 {
+  background-image: url("./imgs/roupas/jeans1.png");
+}
+.produto:hover .jeans1 {
+  background-image: url("./imgs/roupas/jeans2.png");
+}
+.jeans2 {
+  background-image: url("./imgs/roupas/jeans2.png");
+}
+.produto:hover .jeans2 {
+  background-image: url("./imgs/roupas/jeans3.png");
+}
+.jeans3 {
+  background-image: url("./imgs/roupas/jeans3.png");
+}
+.produto:hover .jeans3 {
+  background-image: url("./imgs/roupas/jeans1.png");
+}
+
+.shirt1 {
+  background-image: url("./imgs/roupas/shirt1.png");
+}
+.produto:hover .shirt1 {
+  background-image: url("./imgs/roupas/shirt2.png");
+}
+.shirt2 {
+  background-image: url("./imgs/roupas/shirt2.png");
+}
+.produto:hover .shirt2 {
+  background-image: url("./imgs/roupas/shirt3.png");
+}
+.shirt3 {
+  background-image: url("./imgs/roupas/shirt3.png");
+}
+.produto:hover .shirt3 {
+  background-image: url("./imgs/roupas/shirt1.png");
+}
+
+.sweater1 {
+  background-image: url("./imgs/roupas/sweater1.png");
+}
+.produto:hover .sweater1 {
+  background-image: url("./imgs/roupas/sweater2.png");
+}
+.sweater2 {
+  background-image: url("./imgs/roupas/sweater2.png");
+}
+.produto:hover .sweater2 {
+  background-image: url("./imgs/roupas/sweater3.png");
+}
+.sweater3 {
+  background-image: url("./imgs/roupas/sweater3.png");
+}
+.produto:hover .sweater3 {
+  background-image: url("./imgs/roupas/sweater1.png");
+}
+
+.sweatpants1 {
+  background-image: url("./imgs/roupas/sweatpants1.png");
+}
+.produto:hover .sweatpants1 {
+  background-image: url("./imgs/roupas/sweatpants2.png");
+}
+.sweatpants2 {
+  background-image: url("./imgs/roupas/sweatpants2.png");
+}
+.produto:hover .sweatpants2 {
+  background-image: url("./imgs/roupas/sweatpants3.png");
+}
+.sweatpants3 {
+  background-image: url("./imgs/roupas/sweatpants3.png");
+}
+.produto:hover .sweatpants3 {
+  background-image: url("./imgs/roupas/sweatpants1.png");
+}
+
+.sweatshirt1 {
+  background-image: url("./imgs/roupas/sweatshirt1.png");
+}
+.produto:hover .sweatshirt1 {
+  background-image: url("./imgs/roupas/sweatshirt2.png");
+}
+.sweatshirt2 {
+  background-image: url("./imgs/roupas/sweatshirt2.png");
+}
+.produto:hover .sweatshirt2 {
+  background-image: url("./imgs/roupas/sweatshirt3.png");
+}
+.sweatshirt3 {
+  background-image: url("./imgs/roupas/sweatshirt3.png");
+}
+.produto:hover .sweatshirt3 {
+  background-image: url("./imgs/roupas/sweatshirt1.png");
+}
+/*---------------*/
+
+.produto-name {
+  display: flex;
+  flex-direction: row;
+  margin: 2px 0px;
+}
+.fa-star {
+  color: goldenrod;
+}
+
+.produto-price {
+  font-size: 12px;
+  margin: 2px 0px;
+}
+
+.produto-price mark {
+  background-color: transparent;
+}
+
+footer {
+  font-size: 13px;
+}
+
+footer li:hover {
+  cursor: pointer;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 10px;
+
+  background-color: var(--bg-footer);
+}
+
+.footer-top li {
+  padding: 0 10px;
+  font-size: 0.8em;
+}
+
+.footer-top-items {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-top-item {
+  padding: 10px 10px;
+}
+
+.footer-top-item ul {
+  padding-bottom: 30px;
+}
+
+.footer-top-item li {
+  line-height: 2em;
+  font-weight: 300;
+}
+
+.pagamentos,
+.social-media {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pagamentos img {
+  height: 20px;
+}
+
+.social-icon {
+  font-size: 20px;
+}
+
+.footer-bottom {
+  padding: 0px 10px;
+}
+
+.footer-bottom ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-bottom li {
+  padding: 0 10px;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.footer-bottom img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.footer-bottom li {
+  line-height: 2em;
+}
+
+.footer-bottom li div {
+  display: flex;
+  align-items: center;
+}
+
+/* ---------------------- */
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 0.3;
+  }
+}
+
+/* --------------------- */
+
+@media (min-width: 769px) {
+  main {
+    margin-top: 188px;
+  }
+  .produto-img {
+    width: 150px;
+  }
+  #menu-bars-icon {
+    display: none;
+  }
+  .categorys {
+    display: block;
+  }
+  .categorys ul {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .categorys li {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 105px;
+    transition: letter-spacing 0.5s;
+  }
+  .categorys li:hover {
+    letter-spacing: 0.5px;
+  }
+  .categorys a {
+    text-decoration: none;
+  }
+  .header-top-logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: auto;
+  }
+
+  .header-top-logo b {
+    display: block;
+    font-size: 1em;
+  }
+
+  .header-top-logo-name {
+    font-family: "Times New Roman", serif;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navigation-category-top {
+    display: flex;
+    width: 100%;
+  }
+
+  .navigation-category-top br {
+    display: none;
+  }
+
+  .produto {
+    width: 300px;
+  }
+} ;
