@@ -5,14 +5,56 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fasshion</title>
-  </head>
-  <body>
-    <h1>Hello World</h1>
 
-    <button><a href="./src/cadastro/cadastro.html">Criar conta</a></button>
-    <br />
-    <button><a href="./src/login/login.html">Fazer login</a></button>
-    <br />
-    <button><a href="./src/checkout/checkout.html"> Checkout</a></button>
+    <link rel="stylesheet" href="./assets/css/common-styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="main-header b-shadow">
+      <div class="inner container">
+        <div class="logo">
+          <a href="#">FASHIONISTA</a>
+        </div>
+        <div class="controls">
+          <ul>
+            <li>
+              <a id="button-search" href="#"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+            </li>
+            <li>
+              <a id="button-cart" href="#"
+                ><i class="fa-solid fa-bag-shopping"></i
+              ></a>
+              <span class="notification-count">2</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusantium
+      delectus, provident ab totam dolorum corrupti aut sunt magni iusto neque,
+      sequi sit laudantium aliquid facere cumque dolores consequatur natus!
+    </main>
+
+    <ul>
+      <li><a href="./src/cadastro/cadastro.html">Cadastro</a></li>
+      <li><a href="./src/checkout/checkout.html">checkout</a></li>
+      <li><a href="./src/login/login.html">login</a></li>
+      <li><a href="./src/produto/produto.html">Produto</a></li>
+    </ul>
   </body>
 </html>
