@@ -1,0 +1,16 @@
+:root {
+  --container-max-width: 1200px;
+  --border-color: #3e5c76;
+  --highlight-color: #dbd4b1;
+  --default-font-family: 'Roboto, sans-serif';
+
+  --color-rich-black: #0d1321;
+  --letter-color: #1d2d44;
+  --color-shadow-blue: #748cab;
+  --color-eggshell: #f0ebd8;
+  --color-black: #010101;
+  --border-color: #3e5c76;
+  --highlight-color: #dbd4b1;
+  --search-border-color: #dad6c1;
+  --bg-footer: rgb(244, 244, 244);
+}
