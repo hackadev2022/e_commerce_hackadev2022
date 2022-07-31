@@ -6,10 +6,11 @@
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 a:hover {
-  opacity: 0.9;
+  opacity: 0.7;
 }
 
 a:active {
@@ -98,6 +99,20 @@ header {
 
 .menu-icons {
   font-size: 1.6rem;
+}
+
+.shopping-cart-span {
+  font-size: 0.8rem;
+  border-radius: 50%;
+  background-color: var(--color-shadow-blue);
+  padding: 0.3rem 0.5rem;
+  margin-bottom: 100px;
+  color: #fafafa;
+  text-decoration: none;
+
+  position: relative;
+  top: -15px;
+  right: 15px;
 }
 
 .header-top-items {

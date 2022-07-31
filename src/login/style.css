@@ -1,4 +1,4 @@
-@import "../../assets/css/flavio-home.css";
+@import '../../assets/css/flavio-home.css';
 * {
   padding: 0;
   margin: 0;
@@ -18,7 +18,7 @@
 body {
   font-size: 16px;
   background-color: var(--color-eggshell);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container-login {
@@ -89,7 +89,7 @@ body {
 }
 
 .login-btn:hover {
-  background-color: #748cab;
+  background-color: var(--border-color);
 }
 
 .recuperar-senha {
