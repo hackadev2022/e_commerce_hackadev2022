@@ -4,9 +4,19 @@
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fasshion</title>
+    <link
+      rel="shortcut icon"
+      href="/img/ideias-de-logo/logo3-img-Flávio.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HackFashion | Cadastro</title>
 
     <link rel="stylesheet" href="/assets/css/common-styles.css" />
+
+    <link rel="stylesheet" href="../../assets/css/common-styles.css" />
+    <link rel="stylesheet" href="../../assets/css/header.css" />
+    <link rel="stylesheet" href="cadastro.css" />
 
     <link
       rel="stylesheet"
@@ -21,33 +31,223 @@
   </head>
 
   <body>
-    <header class="main-header b-shadow">
-      <div class="inner container">
-        <div class="logo">
-          <a href="#">FASHIONISTA</a>
+    <header class="b-shadow">
+      <div class="container">
+        <div class="header-top-items">
+          <div class="header-top-logo">
+            <a href="../../index.html"
+              ><div class="header-top-logo-img"></div>
+              <div class="header-top-logo-name"></div
+            ></a>
+          </div>
+          <div>
+            <a
+              href="https://www.google.com.br/maps/place/Centro+-+St.+Central,+Goi%C3%A2nia+-+GO,+74055-235/@-16.6669997,-49.2609273,15z/data=!3m1!4b1!4m5!3m4!1s0x935ef3d0ea223305:0xab32824ff1bbf683!8m2!3d-16.6670207!4d-49.2521725"
+              target="_blank"
+              ><i class="fa-solid fa-location-dot menu-icons"></i
+            ></a>
+
+            <a href="./cadastro.html"
+              ><i class="fa-solid fa-user menu-icons"></i
+            ></a>
+
+            <a href="../carrinho-busca/carrinho.html"
+              ><i class="fa-solid fa-cart-shopping menu-icons"></i
+              ><span class="shopping-cart-span">3</span></a
+            >
+
+            <a href="#" id="menu-bars-icon"
+              ><i class="fa-solid fa-bars menu-icons"></i
+            ></a>
+          </div>
         </div>
-        <div class="controls">
+        <div class="header-bottom-items">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <input type="text" name="" id="search-input" placeholder="pesquisa" />
+        </div>
+        <div class="categorys">
           <ul>
-            <li>
-              <a id="button-search" href="#"
-                ><i class="fa-solid fa-magnifying-glass"></i
-              ></a>
-            </li>
-            <li>
-              <a id="button-cart" href="#"
-                ><i class="fa-solid fa-bag-shopping"></i
-              ></a>
-              <span class="notification-count">2</span>
-            </li>
+            <li><a href="../../index.html">Jeans</a></li>
+            <li><a href="../../index.html">Camisas </a></li>
+            <li><a href="../../index.html">Suéter </a></li>
+            <li><a href="../../index.html">Calças de moletom </a></li>
+            <li><a href="../../index.html">Camisas de moletom </a></li>
           </ul>
         </div>
       </div>
     </header>
 
-    <main class="container">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusantium
-      delectus, provident ab totam dolorum corrupti aut sunt magni iusto neque,
-      sequi sit laudantium aliquid facere cumque dolores consequatur natus!
+    <main class="main-content">
+      <div class="container">
+        <div class="create-account">
+          <div>
+            <h1>Criar Conta</h1>
+            <!-- <input type="radio" name="pf" id="pf" disabled>
+        <label for="pf">Pessoa Física</label> -->
+            <input type="radio" name="pj" id="pj" checked />
+            <label for="pj">Pessoa Júridica </label>
+          </div>
+
+          <div class="login-a">
+            Já possui uma conta ? Clique aqui para fazer
+            <a href="../../src/login/login.html" target="iframe">Login</a>
+          </div>
+        </div>
+      </div>
+      <form action="#" autocomplete="off">
+        <div class="container">
+          <div class="form-container">
+            <div class="container">
+              <fieldset class="data-pj">
+                <legend>
+                  <i class="fa-solid fa-user-tie"> </i> Dados Cadastrais
+                </legend>
+                <label for="name">Nome do Responsável</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  title="Este campo é obrigátorio"
+                  placeholder="Insira seu nome completo"
+                  required
+                />
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Insira um email válido"
+                  required
+                />
+                <label for="cnpj">CNPJ</label>
+                <input
+                  type="text"
+                  name="cnpj"
+                  id="cnpj"
+                  placeholder="Número do CNPJ sem os pontos"
+                  pattern="[0-9]+"
+                  title="Preencha apenas com números"
+                  mask="99.999.999/9999-99"
+                  maxlength="14"
+                  required
+                />
+                <label for="social">Razão Social</label>
+                <input type="text" name="social" id="social" required />
+                <label for="ins-estadual">Inscrição Estadual</label>
+                <input
+                  type="text"
+                  name="ins-estadual"
+                  id="ins-estadual"
+                  pattern="[0-9]+"
+                  required
+                />
+                <label for="cell">Celular</label>
+                <input
+                  type="tel"
+                  name="cell"
+                  placeholder="Telefone celular | Apenas números"
+                  maxlength="11"
+                  id="cell"
+                />
+                <label for="tel">Telefone Fixo</label>
+                <input
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  placeholder="Telefone fixo | Apenas números"
+                  maxlength="11"
+                  required
+                />
+                <label for="seller">Nome do vendedor</label>
+                <input type="text" name="seller" id="seller" required />
+              </fieldset>
+            </div>
+
+            <div class="container">
+              <fieldset class="data-adress">
+                <legend>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Endereço
+                </legend>
+                <label for="cep">CEP</label>
+                <input
+                  type="text"
+                  name="cep"
+                  id="cep"
+                  placeholder="Insira seu CEP | Apenas números"
+                  required
+                />
+                <label for="adress">Endereço</label>
+                <input type="text" name="adress" id="adress" " required />
+                <label for="a-num">Número</label>
+                <input type="number" name="a-num" id="a-num" pattern="[0-9]+" />
+                <label for="compliment">Complemento</label>
+                <input type="text" name="compliment" id="compliment" />
+                <label for="a-refer">Rêferencia</label>
+                <input type="text" name="a-refer" id="a-refer" />
+                <label for="a-distrit">Bairro</label>
+                <input type="text" name="a-distrit" id="a-distrit" required />
+                <label for="a-city">Cidade</label>
+                <input list="a-city" name="a-city" required />
+                <datalist id="a-city">
+                  <option value="Goiânia"></option>
+                  <option value="Aparecida de Goiânia"></option>
+                  <option value="Trindade"></option>
+                  <option value="Goianira"></option>
+                  <option value="Anápolis"></option>
+                </datalist>
+
+                <label for="a-state">Estado</label>
+                <select name="a-state" id="a-state" required>
+                  <option value="">Selecione</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="GO">Goías</option>
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="PA">Pará</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
+                  <option value="DF">Distrito Federal</option>
+                </select>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-btn container">
+          <button class="btn cancel" type="button">Cancel</button>
+          <button class="btn submit" type="submit">Criar conta</button>
+          <a href="../../src/login/login.html"
+            ><button class="btn login" type="button">Login</button></a
+          >
+        </div>
+      </form>
     </main>
+
+    <!-- <footer>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
+        eligendi vero obcaecati, magni distinctio incidunt illum provident
+        laborum dolores blanditiis dolore facilis accusamus sequi dolorum odio
+        sunt mollitia quam perspiciatis?
+      </p>
+    </footer> -->
   </body>
 </html>

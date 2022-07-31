@@ -1,0 +1,132 @@
+header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-eggshell);
+  height: auto;
+  position: fixed;
+  width: 100%;
+  /* z-index: 1; */
+  min-height: 10.5rem;
+  border-bottom: 1px solid #dad6c1;
+}
+
+.container {
+  max-width: var(--container-max-width);
+  background-color: var(--color-eggshell);
+  width: 100%;
+}
+
+.logo {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.menu-icons {
+  font-size: 1.6rem;
+}
+
+.header-top-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top-logo b {
+  display: none;
+}
+.header-top-logo a {
+  display: flex;
+  align-items: center;
+}
+
+.header-top-logo-img,
+.main-baner-top-logo-img {
+  background-image: url("../../img/ideias-de-logo-sem-fundo/logo3-img-Flávio-sem-fundo.png");
+  width: 7rem;
+  height: 7rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.header-top-logo-name {
+  display: none;
+  background-image: url("../../img/ideias-de-logo-sem-fundo/logo3-name-Flávio-sem-fundo.png");
+  width: 26.8rem;
+  height: 3.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-top-items i {
+  padding: 1rem;
+}
+
+.header-bottom-items {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+}
+
+.header-bottom-items i {
+  color: var(--letter-color);
+  position: absolute;
+  top: 8.7rem;
+  margin-left: 1.6rem;
+}
+
+#search-input {
+  border: 1px solid var(--search-border-color);
+  background-color: transparent;
+  border-radius: 3rem;
+  font-size: 1.4rem;
+  display: block;
+  width: 100%;
+  height: 3.9rem;
+  padding: 1em 2em;
+  margin: 0.5rem;
+}
+
+.categorys {
+  display: none;
+}
+@media (min-width: 770px) {
+  .header-top-logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: auto;
+  }
+
+  .header-top-logo b {
+    display: block;
+    font-size: 1rem;
+  }
+
+  .header-top-logo-name {
+    display: block;
+  }
+
+  .categorys {
+    display: block;
+  }
+  .categorys ul {
+    padding: 1rem 0px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .categorys li {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 10.5rem;
+    transition: letter-spacing 0.5s;
+  }
+  .categorys li:hover {
+    letter-spacing: 0.5px;
+  }
+  .categorys a {
+    text-decoration: none;
+  }
+}

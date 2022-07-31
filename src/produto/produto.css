@@ -1,0 +1,156 @@
+@import "../../assets/css/common-styles.css";
+@import "../../assets/css/header.css";
+@import "../../assets/css/flavio-home.css";
+
+:root {
+  font-size: 62.5%;
+
+  --color-primary: #f0ebd8;
+  --color-secondary: #748cab;
+  --color-tertiary: #3e5c76;
+  --color-cta: #0d1321;
+  --light-color: #fafafa;
+  --dark-color: #000;
+
+  --margin-bottom: 2rem;
+}
+
+/* body {
+  background-color: var(--color-primary);
+  font-family: "Roboto", sans-serif;
+  color: var(--dark-color);
+  height: 100%;
+} */
+
+main {
+  height: 100%;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 12.5rem;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+#payment {
+  font-size: 1.4rem;
+  color: var(--color-secondary);
+}
+
+.size-btn {
+  font-size: 1.2rem;
+
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.gray-text {
+  font-size: 1.4rem;
+  color: var(--color-secondary);
+}
+
+.size-item-btn {
+  padding: 1rem 1.5rem;
+  border: none;
+  background-color: var(--color-secondary);
+  color: var(--light-color);
+  cursor: pointer;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+
+  margin-inline-start: 0.5rem;
+}
+
+.product-amount {
+  text-align: center;
+  margin-bottom: var(--margin-bottom);
+  font-size: 2rem;
+}
+.product-amount > button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  background-color: var(--color-secondary);
+  color: var(--light-color);
+
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border-radius: 50%;
+
+  margin-inline-start: 00.5rem;
+}
+
+.product-amount > button:hover,
+.size-item-btn:hover {
+  background-color: var(--color-cta);
+}
+
+.shop-car {
+  padding: 1rem 0.5rem;
+  width: 100%;
+
+  background-color: var(--color-cta);
+  color: var(--light-color);
+
+  font-size: 1.8rem;
+  font-weight: bold;
+
+  border-radius: 0.5rem;
+}
+
+.shop-car:hover {
+  background-color: var(--color-tertiary);
+  color: var(--light-color);
+}
+
+@media screen and (min-width: 770px) {
+  .main-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 18.5rem;
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+
+  .container-info {
+    width: 100%;
+    margin-left: 2rem;
+  }
+
+  .size-btn {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .product-amount {
+    text-align: start;
+  }
+
+  .shop-car {
+    width: 25rem;
+  }
+}

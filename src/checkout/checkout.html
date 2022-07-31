@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fasshion</title>
+    <link
+      rel="shortcut icon"
+      href="/img/ideias-de-logo/logo3-img-Flávio.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HackFashion | Checkout</title>
 
-    <link rel="stylesheet" href="/assets/css/common-styles.css" />
+    <link rel="stylesheet" href="../../assets/css/common-styles.css" />
+    <link rel="stylesheet" href="./checkout.css" />
 
     <link
       rel="stylesheet"
@@ -21,33 +28,266 @@
   </head>
 
   <body>
-    <header class="main-header b-shadow">
-      <div class="inner container">
-        <div class="logo">
-          <a href="#">FASHIONISTA</a>
+    <header class="b-shadow">
+      <div class="container">
+        <div class="header-top-items">
+          <div class="header-top-logo">
+            <a href="../../index.html"
+              ><div class="header-top-logo-img"></div>
+              <div class="header-top-logo-name"></div
+            ></a>
+          </div>
+          <div>
+            <a
+              href="https://www.google.com.br/maps/place/Centro+-+St.+Central,+Goi%C3%A2nia+-+GO,+74055-235/@-16.6669997,-49.2609273,15z/data=!3m1!4b1!4m5!3m4!1s0x935ef3d0ea223305:0xab32824ff1bbf683!8m2!3d-16.6670207!4d-49.2521725"
+              target="_blank"
+              ><i class="fa-solid fa-location-dot menu-icons"></i
+            ></a>
+
+            <a href="../cadastro/cadastro.html"
+              ><i class="fa-solid fa-user menu-icons"></i
+            ></a>
+
+            <a href="../carrinho-busca/carrinho.html"
+              ><i class="fa-solid fa-cart-shopping menu-icons"></i
+              ><span class="shopping-cart-span">3</span></a
+            >
+
+            <a href="#" id="menu-bars-icon"
+              ><i class="fa-solid fa-bars menu-icons"></i
+            ></a>
+          </div>
         </div>
-        <div class="controls">
+        <div class="header-bottom-items">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <input type="text" name="" id="search-input" placeholder="pesquisa" />
+        </div>
+        <div class="categorys">
           <ul>
-            <li>
-              <a id="button-search" href="#"
+            <li><a href="../../index.html">Jeans</a></li>
+            <li><a href="../../index.html">Camisas </a></li>
+            <li><a href="../../index.html">Suéter </a></li>
+            <li><a href="../../index.html">Calças de moletom </a></li>
+            <li><a href="../../index.html">Camisas de moletom </a></li>
+            <!-- <li>
+              <a id="button-search" href="../carrinho-busca/busca.html"
                 ><i class="fa-solid fa-magnifying-glass"></i
               ></a>
             </li>
             <li>
-              <a id="button-cart" href="#"
+              <a id="button-cart" href="../carrinho-busca/carrinho.html"
                 ><i class="fa-solid fa-bag-shopping"></i
               ></a>
-              <span class="notification-count">2</span>
-            </li>
+              <span class="notification-count">3</span>
+            </li> -->
           </ul>
         </div>
       </div>
     </header>
 
-    <main class="container">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusantium
-      delectus, provident ab totam dolorum corrupti aut sunt magni iusto neque,
-      sequi sit laudantium aliquid facere cumque dolores consequatur natus!
+    <main class="container main-checkout">
+      <div class="checkout">
+        <div class="checkout__cart">
+          <h2>
+            Seu pedido
+            <span
+              >(<a href="../carrinho-busca/carrinho.html"
+                ><i class="fa-solid fa-chevron-left"></i>Voltar para o
+                carrinho</a
+              >)</span
+            >
+          </h2>
+
+          <div class="wrapper-table">
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <!-- imagem do produto -->
+                  <th>Produto</th>
+                  <th>Atributos</th>
+                  <th>Qtd.</th>
+                  <th>Preço Unit.</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="offer">
+                      <img
+                        src="/./img/roupas_sem_fundo/sweater1.png"
+                        alt="Suéter Cinza"
+                      />
+                    </div>
+                  </td>
+                  <td>Suéter Cinza</td>
+                  <td>Tam: P</td>
+                  <td>2</td>
+                  <td class="price">
+                    <span class="price__old">R$ 199,99</span>R$ 179,99
+                  </td>
+                  <td>R$ 179,99</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="/./img/roupas_sem_fundo/jeans1.png"
+                      alt="Calça Jeans"
+                    />
+                  </td>
+                  <td>Calça Jeans</td>
+                  <td>Tam: M</td>
+                  <td>1</td>
+                  <td>R$ 199,99</td>
+                  <td>R$ 199,99</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="/./img/roupas_sem_fundo/sweatpants2.png"
+                      alt="Moletom Preto"
+                    />
+                  </td>
+                  <td>Moletom Preto</td>
+                  <td>Tam: M</td>
+                  <td>1</td>
+                  <td>R$ 199,99</td>
+                  <td>R$ 199,99</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="checkout__info">
+          <div class="column personal-info">
+            <h2>Você</h2>
+
+            <div class="personal-info__user">
+              <span>endereco@email.com</span>
+              <a href="#">Sair e trocar</a>
+            </div>
+
+            <h2>Destino</h2>
+            <div class="personal-info__address">
+              <button class="btn-add">
+                <i class="fa-solid fa-add"></i>
+              </button>
+              <div class="address-block">
+                Nome do Cliente <br />
+                Nome da rua, 100 <br />
+                Cidade - UF <br />
+                <strong>12345-000</strong> <br />
+                <div class="text-align-right">
+                  <div class="selected-text">
+                    Endereço para envio <i class="fa-solid fa-check"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h2>Forma de envio</h2>
+            <div class="shipping">
+              <div class="shipping__item">
+                <input type="radio" name="shipping-method" id="retirada" />
+                <label for="retirada"
+                  >Retirada no local <strong>Grátis</strong></label
+                >
+              </div>
+              <div class="shipping__item shipping__item--selected">
+                <input type="radio" checked name="shipping-method" id="pac" />
+                <label for="pac">PAC <strong>R$ 20,00</strong></label>
+              </div>
+              <div class="shipping__item">
+                <input type="radio" name="shipping-method" id="sedex" />
+                <label for="sedex">SEDEX <strong>R$ 35,00</strong></label>
+              </div>
+
+              <div class="shipping__time">
+                <strong>Prazo de Entrega:</strong> 10 dias úteis
+              </div>
+            </div>
+
+            <div class="notes">
+              <h2>Observações</h2>
+              <textarea
+                name="shipping-notes"
+                id="shipping-notes"
+                rows="5"
+                placeholder="Informações adicionais sobre o pedido."
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="column payment-info">
+            <h2>Resumo</h2>
+            <div class="payment-info__summary">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>Subtotal</td>
+                    <td>R$ 579,97</td>
+                  </tr>
+                  <tr>
+                    <td>PAC</td>
+                    <td>R$ 20,00</td>
+                  </tr>
+                  <tr class="total">
+                    <td>Total do pedido</td>
+                    <td>
+                      <strong>R$ 599,97</strong>
+                      <div>em até 10x de 60,00<br /></div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h2>Como deseja pagar?</h2>
+            <div class="payment-method">
+              <div class="payment-method__item">
+                <input type="radio" name="payment-method" id="pix" />
+                <label for="pix">
+                  <div>
+                    <i class="fa-brands fa-pix"></i>
+                    PIX
+                  </div>
+                  <span>à vista</span>
+                </label>
+              </div>
+
+              <div class="payment-method__item payment-method__item--selected">
+                <input type="radio" checked name="payment-method" id="boleto" />
+                <label for="boleto">
+                  <div>
+                    <i class="fa-solid fa-barcode"></i>
+                    Boleto
+                  </div>
+                  <span>à vista</span>
+                </label>
+              </div>
+
+              <div class="payment-method__item">
+                <input type="radio" name="payment-method" id="cartao-credito" />
+                <label for="cartao-credito">
+                  <div>
+                    <i class="fa-solid fa-credit-card"></i>
+                    Cartão de crédito
+                  </div>
+                  <span>até 6x sem juros</span>
+                </label>
+              </div>
+
+              <br />
+              <div class="text-align-right">
+                <a href="#" class="btn">Ir para o pagamento</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>

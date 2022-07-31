@@ -1,0 +1,129 @@
+@import '../../assets/css/flavio-home.css';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-rich-black: #0d1321;
+  --letter-color: #1d2d44;
+  --color-shadow-blue: #748cab;
+  --color-eggshell: #f0ebd8;
+  --color-black: #010101;
+  --border-color: #3e5c76;
+  --highlight-color: #dbd4b1;
+}
+
+body {
+  font-size: 16px;
+  background-color: var(--color-eggshell);
+  font-family: 'Roboto', sans-serif;
+}
+
+.container-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.b-shadow {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+.link-style {
+  text-decoration: none;
+  background-color: rgb(16, 16, 107);
+  border-radius: 4px;
+  padding: 2.5px;
+  color: whitesmoke;
+}
+
+.login-area,
+.text-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.text-main {
+  color: #f0ebd8;
+}
+
+.cpf-cnpj {
+  padding: 20px;
+  width: 100%;
+  height: 2.4rem;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.login-area ::placeholder {
+  text-align: center;
+}
+
+.login-area {
+  max-width: 500px;
+}
+
+.login-btn {
+  border: none;
+  color: whitesmoke;
+  background-color: #0d1321;
+  border-radius: 30px;
+
+  text-align: center;
+}
+
+.btn {
+  padding: 2rem 3rem;
+  margin-bottom: 1rem;
+}
+
+.login-btn:hover {
+  background-color: var(--border-color);
+}
+
+.recuperar-senha {
+  text-align: center;
+  margin-top: 2%;
+  color: var(--letter-color);
+}
+
+@media (max-width: 770px) {
+  .login-area,
+  .text-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .cpf-cnpj {
+    padding: 20px;
+    width: 25rem;
+    height: 3rem;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    border: 2px solid black;
+  }
+
+  .text-main {
+    font-size: 2.2rem;
+  }
+
+  .recuperar-senha {
+    text-align: center;
+    margin-top: 6%;
+  }
+}

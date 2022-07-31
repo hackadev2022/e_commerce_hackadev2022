@@ -2,11 +2,14 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-
+<link rel="shortcut icon" href="/img/ideias-de-logo-sem-fundo/logo3-img-Flávio-sem-fundo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fasshion</title>
+    <title>HackFashion | Home</title>
 
-    <link rel="stylesheet" href="./assets/css/common-styles.css" />
+
+    <!-- <link rel="stylesheet" href="../../assets/css/common-styles.css"> -->
+    <link rel="stylesheet" href="./assets/css/flavio-home.css" />
+    
 
     <link
       rel="stylesheet"
@@ -21,40 +24,431 @@
   </head>
 
   <body>
-    <header class="main-header b-shadow">
-      <div class="inner container">
-        <div class="logo">
-          <a href="#">FASHIONISTA</a>
+    <header class="b-shadow">
+      <div class="container">
+        <div class="header-top-items">
+          <div class="header-top-logo">
+            <a href=""><div class="header-top-logo-img"></div><div class="header-top-logo-name"></div></a>
+          </div>
+          <div>
+            <a href="https://www.google.com.br/maps/place/Centro+-+St.+Central,+Goi%C3%A2nia+-+GO,+74055-235/@-16.6669997,-49.2609273,15z/data=!3m1!4b1!4m5!3m4!1s0x935ef3d0ea223305:0xab32824ff1bbf683!8m2!3d-16.6670207!4d-49.2521725" target="_blank"
+              ><i class="fa-solid fa-location-dot menu-icons"></i
+            ></a>
+  
+            <a href="./src/cadastro/cadastro.html"><i class="fa-solid fa-user menu-icons"></i></a>
+  
+            <a href="./src/carrinho-busca/carrinho.html"
+              ><i class="fa-solid fa-cart-shopping menu-icons "></i
+            ><span class="shopping-cart-span">3</span></a>
+  
+            <a href="#" id="menu-bars-icon"
+              ><i class="fa-solid fa-bars menu-icons"></i
+            ></a>
+          </div>
         </div>
-        <div class="controls">
+        <div class="header-bottom-items">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <input
+            type="text"
+            name=""
+            id="search-input"
+            placeholder="pesquisa"
+          />
+        </div>
+        <div class="categorys">
           <ul>
-            <li>
-              <a id="button-search" href="#"
-                ><i class="fa-solid fa-magnifying-glass"></i
-              ></a>
-            </li>
-            <li>
-              <a id="button-cart" href="#"
-                ><i class="fa-solid fa-bag-shopping"></i
-              ></a>
-              <span class="notification-count">2</span>
-            </li>
+            <li><a href="#">Jeans</a></li>
+            <li><a href="#">Camisas </a></li>
+            <li><a href="#">Suéter </a></li>
+            <li><a href="#">Calças de moletom </a></li>
+            <li><a href="#">Camisas de moletom </a></li>
           </ul>
         </div>
       </div>
     </header>
-
     <main class="container">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusantium
-      delectus, provident ab totam dolorum corrupti aut sunt magni iusto neque,
-      sequi sit laudantium aliquid facere cumque dolores consequatur natus!
-    </main>
+      <section class="main-baner ">
+        <div class="main-baner-top">
+          <a href="#"><div class="main-baner-top-logo-img"></div></i></a>
+          <strong><h2>SALE</h2></strong><br>
+          <div>
+            <strong><h2>Última Semana</h2></strong><br />
+            <strong><h3>Até 10$ OFF</h3></strong><br />
+          </div>
+        </div>
+        <div class="main-baner-bottom">
+          
+          <div>
+            <input type="button" value="Comprar" id="button-baner" />
+            <div class="main-baner-button-icon">
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="navigation-category ">
+        <div class="navigation-category-top">
+          <div>
+            <h2>
+              Navegue por <br />
+              categoria
+            </h2>
+          </div>
+          <div class="navigation-slider-control">
+            <a href="#"><i class="fa-solid fa-angle-left"></i></a> 1/5
+            <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+          </div>
+        </div>
+        <div class="navigation-slider">
+          <div>
+            <div class="navigation-slider-item">
+              <div class="jeans1"></div>
+              <a href="#">Jeans</a>
+            </div>
+          </div>
 
-    <ul>
-      <li><a href="./src/cadastro/cadastro.html">Cadastro</a></li>
-      <li><a href="./src/checkout/checkout.html">checkout</a></li>
-      <li><a href="./src/login/login.html">login</a></li>
-      <li><a href="./src/produto/produto.html">Produto</a></li>
-    </ul>
+          <div>
+            <div class="navigation-slider-item">
+              <div class="shirt1"></div>
+              <a href="#">Camisas</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="navigation-slider-item">
+              <div class="sweater1"></div>
+              <a href="#">Suéter</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="navigation-slider-item">
+              <div class="sweatpants1"></div>
+              <a href="#">Calças de moletom</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="navigation-slider-item">
+              <div class="sweatshirt1"></div>
+              <a href="#">Camisas de moletom</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="produtos ">
+        <div class="produtos-title">
+          <h2>Produtos</h2>
+        </div>
+        <a href="./src/produto/produto.html">
+          <div class="produto">
+            <div class="produto-img jeans1 offer"></div>
+            <div class="produto-info">
+              <p class="produto-name">Jeans 1</i></p>
+              <br>
+              <div class="produto-price">
+                <sup class="produto-normal-price"><del>R$199,99</del></sup>
+                <strong class="produto-offer-price">R$179,99</strong>
+                <br>
+                <i class="fa-solid fa-credit-card"></i><b>10 x de R$18,00</b>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./src/produto/produto.html">
+          <div class="produto">
+            <div class="produto-img jeans2"></div>
+            <div class="produto-info">
+              <p class="produto-name">Jeans 2</p>
+              <br>
+              <div class="produto-price">
+                <strong class="produto-normal-price">R$199,99</strong>
+                <br>
+                <i class="fa-solid fa-credit-card"></i><b>10 x de R$18,00</b>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./src/produto/produto.html">
+          <div class="produto">
+            <div class="produto-img jeans3"></div>
+            <div  class="produto-info">
+              <p class="produto-name">Jeans 3</p>
+              <br>
+              <div class="produto-price">
+                <strong class="produto-normal-price">R$199,99</strong>
+                
+                <br>
+                <i class="fa-solid fa-credit-card"></i><b>10 x de R$18,00</b>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./src/produto/produto.html">
+          <div class="produto">
+            <div class="produto-img shirt1"></div>
+            <div  class="produto-info">
+              <p class="produto-name">Camisa 1</p>
+              <br>
+              <div class="produto-price">
+                <strong class="produto-normal-price">R$199,99</strong>
+                
+                <br>
+                <i class="fa-solid fa-credit-card"></i><b>10 x de R$18,00</b>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./src/produto/produto.html">
+          <div class="produto">
+            <div class="produto-img shirt2"></div>
+            <div  class="produto-info">
+              <p class="produto-name">Camisa 2</p>
+              <br>
+              <div class="produto-price">
+                <strong class="produto-normal-price">R$199,99</strong>
+                
+                <br>
+                <i class="fa-solid fa-credit-card"></i><b>10 x de R$18,00</b>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./src/produto/produto.html">
+          <div class="produto">
+            <div class="produto-img shirt3 offer"></div>
+            <div  class="produto-info">
+              <p class="produto-name">Camisa 3</p>
+              <br>
+              <div class="produto-price">
+                <sup class="produto-normal-price"><del>R$199,99</del></sup>
+                <strong class="produto-offer-price">R$179,99</strong>
+                <br>
+                <i class="fa-solid fa-credit-card"></i><b>10 x de R$18,00</b>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./src/produto/produto.html">
+          <div class="produto">
+            <div class="produto-img sweater1"></div>
+            <div  class="produto-info">
+              <p class="produto-name">Suéter 1</p>
+              <br>
+              <div class="produto-price">
+                <strong class="produto-normal-price">R$199,99</strong>
+                
+                <br>
+                <i class="fa-solid fa-credit-card"></i><b>10 x de R$18,00</b>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./src/produto/produto.html">
+          <div class="produto">
+            <div class="produto-img sweater2 offer"></div>
+            <div class="produto-info">
+              <p class="produto-name">Suéter 2</p>
+              <br>
+              <div class="produto-price">
+                <sup class="produto-normal-price"><del>R$199,99</del></sup>
+                <strong class="produto-offer-price">R$179,99</strong>
+                <br>
+                <i class="fa-solid fa-credit-card"></i><b>10 x de R$18,00</b>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./src/produto/produto.html">
+          <div class="produto">
+            <div class="produto-img sweater3"></div>
+            <div class="produto-info">
+              <p class="produto-name">Suéter 3</p>
+              <br>
+              <div class="produto-price">
+                <strong class="produto-normal-price">R$199,99</strong>
+                
+                <br>
+                <i class="fa-solid fa-credit-card"></i><b>10 x de R$18,00</b>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./src/produto/produto.html">
+          <div class="produto">
+            <div class="produto-img sweatpants1 offer"></div>
+            <div class="produto-info">
+              <p class="produto-name">Calça de moletom 1</p>
+              <br>
+              <div class="produto-price">
+                <sup class="produto-normal-price"><del>R$199,99</del></sup>
+                <strong class="produto-offer-price">R$179,99</strong>
+                <br>
+                <i class="fa-solid fa-credit-card"></i><b>10 x de R$18,00</b>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./src/produto/produto.html">
+          <div class="produto">
+            <div class="produto-img sweatpants2 offer"></div>
+            <div class="produto-info">
+              <p class="produto-name">Calça de moletom 2</p>
+              <br>
+              <div class="produto-price">
+                <sup class="produto-normal-price"><del>R$199,99</del></sup>
+                <strong class="produto-offer-price">R$179,99</strong>
+                <br>
+                <i class="fa-solid fa-credit-card"></i><b>10 x de R$18,00</b>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./src/produto/produto.html">
+          <div class="produto">
+            <div class="produto-img sweatpants3"></div>
+            <div class="produto-info">
+              <p class="produto-name">Calça de moletom 3</p>
+              <br>
+              <div class="produto-price">
+                <strong class="produto-normal-price">R$199,99</strong>
+                
+                <br>
+                <i class="fa-solid fa-credit-card"></i><b>10 x de R$18,00</b>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./src/produto/produto.html">
+          <div class="produto">
+            <div class="produto-img sweatshirt1 offer"></div>
+            <div class="produto-info">
+              <p class="produto-name">Camisa de moletom 1</p>
+              <br>
+              <div class="produto-price">
+                <sup class="produto-normal-price"><del>R$199,99</del></sup>
+                <strong class="produto-offer-price">R$179,99</strong>
+                <br>
+                <i class="fa-solid fa-credit-card"></i><b>10 x de R$18,00</b>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./src/produto/produto.html">
+          <div class="produto">
+            <div class="produto-img sweatshirt2 offer"></div>
+            <div class="produto-info">
+              <p class="produto-name">Camisa de moletom 2</p>
+              <br>
+              <div class="produto-price">
+                <sup class="produto-normal-price"><del>R$199,99</del></sup>
+                <strong class="produto-offer-price">R$179,99</strong>
+                <br>
+                <i class="fa-solid fa-credit-card"></i><b>10 x de R$18,00</b>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="./src/produto/produto.html">
+          <div class="produto">
+            <div class="produto-img sweatshirt3 offer"></div>
+            <div class="produto-info">
+              <p class="produto-name">Camisa de moletom 3</p>
+              <br>
+              <div class="produto-price">
+                <sup class="produto-normal-price"><del>R$199,99</del></sup>
+                <strong class="produto-offer-price">R$179,99</strong>
+                <br>
+                <i class="fa-solid fa-credit-card"></i><b>10 x de R$18,00</b>
+              </div>
+            </div>
+          </div>
+        </a>
+        
+        </div>
+      </section>
+    </main>
+    <footer class="container">
+      <div class="footer-top">
+        <div class="footer-top-items">
+          <div class="footer-top-item">
+            <strong>Sobre a <br />HackFashion</strong>
+            <ul>
+              <li>O Grupo HackFashion</li>
+              <li>Carreira</li>
+              <li>Proteção da marca</li>
+            </ul>
+          </div>
+          <div class="footer-top-item">
+            <strong>Ajuda/Suporte</strong>
+            <ul>
+              <li>Preço de envio </li>
+              <li>Devolução</li>
+              <li>Como pedir</li>
+              <li>Como Rastrear</li>
+              <li>Guia de tamanhos</li>
+              <li>HackFashion VIP</li>
+            </ul>
+          </div>
+          <div class="footer-top-item">
+            <strong>Atendimento ao Cliente</strong>
+            <ul>
+              <li>Contate-Nos </li>
+              <li>Método de Pagamento</li>
+              <li>Pontos Bônus</li>
+            </ul>
+          </div>
+          <div class="footer-top-item">
+            <strong>Loja</strong>
+            <ul>
+              <li>Jeans</li>
+              <li>Camisas</li>
+              <li>Suéter</li>
+              <li>Calças de moletom</li>
+              <li>Camisas de moletom</li>
+            </ul>
+          </div>
+          <div class="footer-top-item">
+            <strong>Encontre-nos em:</strong>
+            <ul class="social-media">
+              <li><i class="fa-brands fa-instagram social-icon"></i></li>
+              <li><i class="fa-brands fa-facebook social-icon"></i></li>
+              <li><i class="fa-brands fa-twitter social-icon"></i></li>
+              <li><i class="fa-brands fa-youtube social-icon"></i></li>
+              <li><i class="fa-brands fa-tiktok social-icon"></i></li>
+            </ul>
+            <strong>Pagamento</strong>
+            <ul class="pagamentos">
+              <li><img src="./img/footer/boleto.png" alt="boleto"></li>
+              <li><img src="./img/footer/elo.png" alt="cartão elo"></li>
+              <li><img src="./img/footer/maestro.png" alt="cartão maestro"></li>
+              <li><img src="./img/footer/mastercard.png" alt="cartão mastercard"></li>
+              <li><img src="./img/footer/PayPal.png" alt="PayPal"></li>
+              <li><img src="./img/footer/visa.png" alt="cartão visa"></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <ul>
+          <li>Mapa da página|</li>
+          <li>Créditos|</li>
+          <li>Termos e condições|</li>
+          <li>Termos de privacidade|</li>
+          <li>Guia de tamanhos|</li>
+          <li>
+            <div >
+              <img src="./img/footer/brasil.png" alt="bandeira do brasil" /><b
+                >Brasil</b
+              >
+            </div>
+          </li>
+          <li>&copy HackADev - 2022</li>
+        </ul>
+      </div>
+    </footer>
+    
   </body>
+
 </html>
