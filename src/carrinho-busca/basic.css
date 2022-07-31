@@ -38,12 +38,22 @@ figcaption:active {
   opacity: 0.5;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 footer:hover {
   opacity: 0.9;
 }
 
 footer:active {
   opacity: 0.8;
+}
+
+footer a {
+  width: fit-content;
 }
 
 /* MAIN */
@@ -86,6 +96,7 @@ header {
   align-items: center;
   height: 60px;
   padding-left: 10px;
+  z-index: 1;
 }
 
 main {
@@ -148,6 +159,18 @@ footer {
   width: 80px;
 }
 
+.offer::after {
+  content: "";
+  background-image: url(../../img/icons/promo.png);
+  background-size: 4rem;
+  width: 3rem;
+  height: 3rem;
+  background-size: cover;
+
+  position: absolute;
+  margin-left: 4rem;
+}
+
 .shop-line-1 {
   font-weight: bold;
   overflow-wrap: break-word;
@@ -183,6 +206,7 @@ footer {
 
 #subtotal {
   text-align: center;
+  width: fit-content;
 }
 
 #busca {
