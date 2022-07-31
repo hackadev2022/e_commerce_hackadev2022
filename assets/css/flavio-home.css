@@ -38,6 +38,7 @@ ul {
 
 body::-webkit-scrollbar {
   width: 0.6rem;
+  height: 0.3rem;
 }
 body::-webkit-scrollbar-track {
   background: var(--bg-footer);

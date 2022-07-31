@@ -148,6 +148,11 @@ footer{
     word-break: break-word;
 }
 
+#old-price{
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
 .minus-products, .plus-products{
     border-color: #1d2d44;
     border-style: solid;
