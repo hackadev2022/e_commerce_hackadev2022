@@ -73,11 +73,18 @@
     <main class="main-content">
       <div class="container">
         <div class="create-account">
-          <h1>Criar Conta</h1>
-          <!-- <input type="radio" name="pf" id="pf" disabled>
+          <div>
+            <h1>Criar Conta</h1>
+            <!-- <input type="radio" name="pf" id="pf" disabled>
         <label for="pf">Pessoa Física</label> -->
-          <input type="radio" name="pj" id="pj" checked />
-          <label for="pj">Pessoa Júridica </label>
+            <input type="radio" name="pj" id="pj" checked />
+            <label for="pj">Pessoa Júridica </label>
+          </div>
+
+          <div class="login-a">
+            Já possui uma conta ? Clique aqui para fazer
+            <a href="../../src/login/login.html" target="iframe">Login</a>
+          </div>
         </div>
       </div>
       <form action="#" autocomplete="off">
@@ -220,6 +227,7 @@
         <div class="form-btn container">
           <button class="btn cancel" type="button">Cancel</button>
           <button class="btn submit" type="submit">Criar conta</button>
+          <button class="btn login" type="button">Login</button>
         </div>
       </form>
     </main>

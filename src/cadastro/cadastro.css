@@ -17,8 +17,13 @@ body {
 }
 
 .main-content {
-  margin-top: 12.2rem;
+  margin-top: 12rem;
   padding: 0 2rem;
+}
+
+.login-a {
+  float: none;
+  margin-bottom: 2rem;
 }
 
 fieldset {
@@ -76,7 +81,16 @@ select :focus {
   margin-top: 2rem;
   border-bottom: 0.1rem solid var(--text-color);
   margin-bottom: 2rem;
+  padding-bottom: 2rem;
+
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
+
 .btn {
   display: inline-block;
   width: 100%;
@@ -117,6 +131,10 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  .main-content {
+    margin-top: 18rem;
+  }
+
   .form-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -137,5 +155,8 @@ footer {
   }
   .btn {
     width: auto;
+  }
+  .login-a {
+    float: right;
   }
 }

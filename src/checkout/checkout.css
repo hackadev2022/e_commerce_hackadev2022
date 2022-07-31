@@ -1,3 +1,8 @@
+@import "../../assets/css/flavio-home.css";
+.main-checkout {
+  margin-top: 14.5rem;
+}
+
 input {
   background: transparent;
 }
@@ -30,7 +35,6 @@ input {
   --border-color: #3e5c76;
   --highlight-color: #dbd4b1;
   --default-font-family: "Roboto, sans-serif";
-
 }
 
 .checkout h2 {
@@ -106,7 +110,7 @@ input {
 }
 
 .checkout__cart table tbody tr:hover {
-  background: var(--highlight-color)
+  background: var(--highlight-color);
 }
 
 .checkout__cart table .price__old {
@@ -202,7 +206,7 @@ input {
   background: var(--highlight-color);
 }
 
-.shipping .shipping__item input[type=radio] {
+.shipping .shipping__item input[type="radio"] {
   margin: 0 1em;
   cursor: pointer;
 }
@@ -225,7 +229,7 @@ input {
 
 /* ------ */
 
-.notes textarea{
+.notes textarea {
   display: block;
   width: 100%;
   font-family: inherit;
@@ -236,7 +240,6 @@ input {
   font-size: 1em;
   background: transparent;
 }
-
 
 /* ------ */
 
@@ -261,7 +264,6 @@ input {
   font-size: 1.5em;
 }
 
-
 /* ----- */
 
 .payment-method .payment-method__item {
@@ -281,7 +283,7 @@ input {
   background: var(--highlight-color);
 }
 
-.payment-method .payment-method__item input[type=radio] {
+.payment-method .payment-method__item input[type="radio"] {
   margin: 0 1em;
   cursor: pointer;
 }
@@ -302,11 +304,10 @@ input {
   font-size: 0.8em;
 }
 
-
 /* mobile */
 
 @media screen and (max-width: 769px) {
-  .checkout__info{
+  .checkout__info {
     flex-direction: column;
   }
   .checkout__info .column {
@@ -314,5 +315,8 @@ input {
     padding: 1em 0;
     border: none !important;
     margin: 0;
+  }
+  .main-checkout {
+    margin-top: 100px;
   }
 }
