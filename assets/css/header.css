@@ -87,6 +87,10 @@ header {
   padding: 1em 2em;
   margin: 0.5rem;
 }
+
+.categorys {
+  display: none;
+}
 @media (min-width: 770px) {
   .header-top-logo {
     display: flex;
@@ -102,5 +106,27 @@ header {
 
   .header-top-logo-name {
     display: block;
+  }
+
+  .categorys {
+    display: block;
+  }
+  .categorys ul {
+    padding: 1rem 0px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .categorys li {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 10.5rem;
+    transition: letter-spacing 0.5s;
+  }
+  .categorys li:hover {
+    letter-spacing: 0.5px;
+  }
+  .categorys a {
+    text-decoration: none;
   }
 }

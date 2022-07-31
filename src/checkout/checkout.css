@@ -304,6 +304,22 @@ input {
   font-size: 0.8em;
 }
 
+.offer::after {
+  display: none;
+}
+
+.offer::before {
+  content: "";
+  background-image: url(../../img/icons/promo.png);
+  background-size: 4rem;
+  width: 3rem;
+  height: 3rem;
+  background-size: cover;
+
+  position: absolute;
+  margin-left: 4rem;
+}
+
 /* mobile */
 
 @media screen and (max-width: 769px) {

@@ -21,84 +21,20 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-body > main {
-  padding: 1rem 0;
+.container-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .container {
-  width: 90%;
-  max-width: var(--container-max-width);
-  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .b-shadow {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
-}
-
-header.main-header {
-  background-color: #fff;
-  padding: 0.75em 0;
-}
-
-.main-header .inner {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.main-header .logo {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-}
-
-.main-header .logo a {
-  font-family: "Times New Roman", serif;
-  color: #222;
-  text-decoration: none;
-  font-size: 2.25em;
-  font-weight: 600;
-}
-
-.main-header .controls {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-}
-
-.main-header .controls ul {
-  list-style: none;
-}
-.main-header .controls ul li {
-  display: inline-block;
-  position: relative;
-}
-
-.main-header .controls li + li {
-  margin-left: 1.25em;
-}
-
-.main-header .controls a {
-  font-size: 1.5em;
-  color: #333;
-}
-
-.main-header .controls .notification-count {
-  font-family: "Archivo";
-  border-radius: 50%;
-  width: 1.5em;
-  height: 1.5em;
-  color: #fff;
-  background: #bc473d;
-  font-size: 0.75em;
-  font-weight: 700;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: -3px;
-  right: -10px;
 }
 
 .link-style {
@@ -130,8 +66,12 @@ header.main-header {
   border: 2px solid black;
 }
 
-::placeholder {
+.login-area ::placeholder {
   text-align: center;
+}
+
+.login-area {
+  max-width: 500px;
 }
 
 .login-btn {

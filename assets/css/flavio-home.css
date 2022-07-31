@@ -161,6 +161,7 @@ header {
   height: 3.9rem;
   padding: 1em 2em;
   margin: 0.5rem;
+  text-transform: capitalize;
 }
 
 .categorys {
@@ -177,7 +178,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
 
-  background-image: url('../../img/banner_ilustrativo.png');
+  background-image: url('../../img/banners/banner_ilustrativo.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
