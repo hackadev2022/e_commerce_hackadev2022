@@ -32,16 +32,33 @@ ul {
   --highlight-color: #dbd4b1;
   --search-border-color: #dad6c1;
   --bg-footer: rgb(244, 244, 244);
+
+  font-size: 62.5%;
+}
+
+body::-webkit-scrollbar {
+  width: 0.6rem;
+}
+body::-webkit-scrollbar-track {
+  background: var(--bg-footer);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--letter-color);
+  border-radius: 2rem;
+}
+footer::-webkit-scrollbar {
+  background-color: transparent;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  font-family: monospace;
+
   align-items: center;
   color: var(--letter-color);
   background: var(--color-eggshell);
-  font-size: 1em;
+  font-size: 1.6rem;
   font-weight: 700;
   position: absolute;
   width: 100%;
@@ -61,7 +78,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1;
-  min-height: 105px;
+  min-height: 10.5rem;
   border-bottom: 1px solid #dad6c1;
 }
 
@@ -72,12 +89,12 @@ header {
 }
 
 .logo {
-  font-size: 2.5em;
-  padding: 10px;
+  font-size: 2rem;
+  padding: 1rem;
 }
 
 .menu-icons {
-  font-size: 1.2em;
+  font-size: 1.6rem;
 }
 
 .header-top-items {
@@ -97,8 +114,8 @@ header {
 .header-top-logo-img,
 .main-baner-top-logo-img {
   background-image: url("../../img/ideias-de-logo-sem-fundo/logo3-img-Flávio-sem-fundo.png");
-  width: 70px;
-  height: 70px;
+  width: 7rem;
+  height: 7rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -106,15 +123,15 @@ header {
 .header-top-logo-name {
   display: none;
   background-image: url("../../img/ideias-de-logo-sem-fundo/logo3-name-Flávio-sem-fundo.png");
-  width: 268px;
-  height: 35px;
+  width: 26.8rem;
+  height: 3.5rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .header-top-items i {
-  padding: 10px;
+  padding: 1rem;
 }
 
 .header-bottom-items {
@@ -127,20 +144,20 @@ header {
 .header-bottom-items i {
   color: var(--letter-color);
   position: absolute;
-  top: 87px;
-  margin-left: 16px;
+  top: 8.7rem;
+  margin-left: 1.6rem;
 }
 
 #search-input {
   border: 1px solid var(--search-border-color);
   background-color: transparent;
-  border-radius: 30px;
-  font-size: 1.2em;
+  border-radius: 3rem;
+  font-size: 1.4rem;
   display: block;
   width: 100%;
-  height: 39px;
+  height: 3.9rem;
   padding: 1em 2em;
-  margin: 5px;
+  margin: 0.5rem;
 }
 
 .categorys {
@@ -148,7 +165,7 @@ header {
 }
 
 main {
-  margin-top: 121.5px;
+  margin-top: 12.2rem;
 }
 
 .main-baner {
@@ -169,8 +186,8 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 30px;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .main-baner-top a {
@@ -179,12 +196,12 @@ main {
 }
 
 .main-baner-top h2 {
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .main-baner-bottom {
-  margin-top: 30px;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -195,27 +212,27 @@ main {
 }
 
 #button-banner {
-  padding: 10px 15px;
-  border-radius: 20px;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
   border: #ece3dd 1px solid;
 }
 
 .main-baner-button-icon {
-  height: 40px;
-  font-size: 1.3em;
+  height: 4rem;
+  font-size: 1.8rem;
 }
 
 .main-baner-button-icon i {
-  font-size: 1.3em;
+  font-size: 1.8rem;
   animation: slide-bottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s infinite
     both;
 }
 
 .navigation-category {
   height: auto;
-  margin-top: 40px;
-  margin-bottom: 60px;
-  padding: 0px 10px;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  padding: 0 1rem;
 }
 
 .navigation-category-top {
@@ -225,24 +242,24 @@ main {
 }
 
 .navigation-category-top h2 {
-  margin: 20px 0;
+  margin: 2rem 0;
 }
 
 .navigation-slider-control {
   align-self: flex-end;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .navigation-slider {
   display: flex;
   overflow: hidden;
   margin: 0 auto;
-  height: 350px;
+  height: 35rem;
   flex-wrap: nowrap;
 }
 
 .navigation-slider-item {
-  margin: 0px 20px;
+  margin: 0 2rem;
 }
 
 .navigation-slider-item:hover {
@@ -268,6 +285,7 @@ main {
 .navigation-slider-item .sweater1 {
   transition: 1s;
 }
+
 .navigation-slider-item:hover .sweatpants1 {
   background-image: url("../../img/roupas_sem_fundo/sweatpants2.png");
 }
@@ -282,9 +300,9 @@ main {
 }
 /*--------------*/
 .navigation-slider-item div {
-  min-width: 180px;
+  min-width: 18rem;
   height: 100%;
-  height: calc(180px * 1.78);
+  height: calc(18rem * 1.78);
 
   background-position: center;
   background-repeat: no-repeat;
@@ -295,7 +313,7 @@ main {
 }
 
 .navigation-slider-item img {
-  width: 180px;
+  width: 18rem;
   transition: 1s;
 }
 
@@ -307,20 +325,35 @@ main {
   flex-wrap: wrap;
 }
 
+.produtos a {
+  text-decoration: none;
+}
+
+.offer::after {
+  content: "";
+  background-image: url(../../img/icons/promo.png);
+  background-size: 4rem;
+  width: 4rem;
+  height: 4rem;
+
+  position: absolute;
+  margin-left: 4rem;
+}
+
 .produtos-title {
   width: 100%;
-  padding-left: 10px;
+  padding-left: 1rem;
 }
 
 .produto {
   background-color: var(--color-eggshell);
-  width: 260px;
+  width: 26rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-wrap: nowrap;
-  margin: 10px 5px;
+  margin: 1rem 0.5rem;
   transition: background-color 0.5s;
 }
 
@@ -329,8 +362,8 @@ main {
 }
 
 .produto-img {
-  min-width: 100px;
-  height: calc(100px * 1.78);
+  min-width: 10rem;
+  height: calc(10rem * 1.78);
 
   background-position: center;
   background-repeat: no-repeat;
@@ -340,15 +373,15 @@ main {
 
 .produto-info {
   text-align: left;
-  padding-left: 15px;
+  padding-left: 1.5rem;
 }
 
 .produto-info strong {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .produto-info del {
-  font-size: 10px;
+  font-size: 1rem;
 }
 /*---------------*/
 .jeans1 {
@@ -450,15 +483,15 @@ main {
 .produto-name {
   display: flex;
   flex-direction: row;
-  margin: 2px 0px;
+  margin: 0.2rem 0;
 }
 .fa-star {
   color: goldenrod;
 }
 
 .produto-price {
-  font-size: 12px;
-  margin: 2px 0px;
+  font-size: 1.2rem;
+  margin: 0.2rem 0;
 }
 
 .produto-price mark {
@@ -466,7 +499,7 @@ main {
 }
 
 footer {
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 
 footer li:hover {
@@ -476,14 +509,14 @@ footer li:hover {
 .footer-top {
   display: flex;
   justify-content: space-around;
-  padding: 30px 10px;
+  padding: 3rem 1rem;
 
   background-color: var(--bg-footer);
 }
 
 .footer-top li {
-  padding: 0 10px;
-  font-size: 0.8em;
+  padding: 0 1rem;
+  font-size: 0.9rem;
 }
 
 .footer-top-items {
@@ -494,15 +527,15 @@ footer li:hover {
 }
 
 .footer-top-item {
-  padding: 10px 10px;
+  padding: 1rem 1rem;
 }
 
 .footer-top-item ul {
-  padding-bottom: 30px;
+  padding-bottom: 3rem;
 }
 
 .footer-top-item li {
-  line-height: 2em;
+  line-height: 2rem;
   font-weight: 300;
 }
 
@@ -513,15 +546,15 @@ footer li:hover {
 }
 
 .pagamentos img {
-  height: 20px;
+  height: 2rem;
 }
 
 .social-icon {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .footer-bottom {
-  padding: 0px 10px;
+  padding: 0px 1rem;
 }
 
 .footer-bottom ul {
@@ -530,19 +563,19 @@ footer li:hover {
 }
 
 .footer-bottom li {
-  padding: 0 10px;
-  font-size: 0.8em;
+  padding: 0 1rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .footer-bottom img {
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
 }
 
 .footer-bottom li {
-  line-height: 2em;
+  line-height: 2rem;
 }
 
 .footer-bottom li div {
@@ -557,19 +590,19 @@ footer li:hover {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(10px);
+    transform: translateY(1rem);
     opacity: 0.3;
   }
 }
 
 /* --------------------- */
 
-@media (min-width: 769px) {
+@media (min-width: 770px) {
   main {
-    margin-top: 178px;
+    margin-top: 17.8rem;
   }
   .produto-img {
-    width: 150px;
+    width: 15rem;
   }
   #menu-bars-icon {
     display: none;
@@ -578,7 +611,7 @@ footer li:hover {
     display: block;
   }
   .categorys ul {
-    padding: 10px 0px;
+    padding: 1rem 0px;
     display: flex;
     justify-content: space-evenly;
   }
@@ -586,7 +619,7 @@ footer li:hover {
     display: flex;
     align-items: center;
     text-align: center;
-    width: 105px;
+    width: 10.5rem;
     transition: letter-spacing 0.5s;
   }
   .categorys li:hover {
@@ -604,7 +637,7 @@ footer li:hover {
 
   .header-top-logo b {
     display: block;
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   .header-top-logo-name {
@@ -621,6 +654,6 @@ footer li:hover {
   }
 
   .produto {
-    width: 300px;
+    width: 30rem;
   }
 } ;

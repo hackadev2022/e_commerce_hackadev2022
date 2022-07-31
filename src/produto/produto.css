@@ -1,4 +1,6 @@
-@import '../../assets/css/common-styles.css';
+@import "../../assets/css/common-styles.css";
+@import "../../assets/css/header.css";
+@import "../../assets/css/flavio-home.css";
 
 :root {
   font-size: 62.5%;
@@ -13,10 +15,15 @@
   --margin-bottom: 2rem;
 }
 
-body {
+/* body {
   background-color: var(--color-primary);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--dark-color);
+  height: 100%;
+} */
+
+main {
+  height: 100%;
 }
 
 .main-container {
@@ -25,6 +32,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  margin-top: 12.5rem;
 }
 
 .image-container img {
@@ -116,8 +124,9 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
+    margin-top: 18.5rem;
   }
 
   .image-container img {
