@@ -9,7 +9,7 @@ Repositorio criado para criação de um site de vendas para participação do Ha
 - Aldo Roque
 - Jean Ramos
 - Bruno
-- Flávio
+- <a href="https://github.com/Flavio-JS" target="_blank">Flávio</a>
 - João
 - Harlen
 - Victor Emanuel
